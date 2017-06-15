@@ -4,8 +4,21 @@
   padding: 0;
   position: relative;
 
+  &-header {
+    display: flex;
+    align-items: center;
+  }
+
   &-content {
     display: none;
+  }
+
+  &-icon {
+    @extend %icon-plus;
+  }
+
+  &-title {
+    margin-left: 20px;
   }
 
   &-trigger {
@@ -19,5 +32,9 @@
 
   &-trigger:checked ~ .accordion-content {
     display: block;
+  }
+
+  &-trigger:checked ~ .accordion-header .accordion-icon {
+    @extend %icon-minus;
   }
 }

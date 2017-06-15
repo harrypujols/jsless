@@ -18,6 +18,15 @@
 .icon-minus,
 %icon-minus {
   @extend %icon-base;
+  transform: rotate(0);
+
+  &:before {
+    transform: rotate(0);
+  }
+
+  &:after {
+    transform: rotate(0);
+  }
 }
 
 .icon-x,
@@ -36,7 +45,7 @@
 .icon-plus,
 %icon-plus {
   @extend %icon-x;
-  transform: rotate(45deg)
+  transform: rotate(45deg);
 }
 
 
