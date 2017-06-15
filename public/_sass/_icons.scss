@@ -64,15 +64,27 @@
 
 .icon-arrow-up,
 %icon-arrow-up {
-  @extend %icon-arrow-left;
-  left: 50%;
-  transform: rotate(90deg);
+  @extend %icon-base;
+
+  &:before {
+    display: none;
+  }
+
+  &:after {
+    top: 0;
+    width: 10px;
+    height: 10px;
+    border-left: 1px solid black;
+    transform: rotate(45deg);
+  }
 }
 
 .icon-arrow-down,
 %icon-arrow-down {
-  @extend %icon-arrow-left;
-  top: 50%;
-  left: 50%;
-  transform: rotate(-90deg);
+  @extend %icon-arrow-up;
+  &:after {
+    top: auto;
+    bottom: 50%;
+    transform: rotate(225deg)
+  }
 }
