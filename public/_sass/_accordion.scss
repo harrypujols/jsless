@@ -1,0 +1,23 @@
+.accordion {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  position: relative;
+
+  &-content {
+    display: none;
+  }
+
+  &-trigger {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+    z-index: 1;
+    opacity: 0;
+  }
+
+  &-trigger:checked ~ .accordion-content {
+    display: block;
+  }
+}
