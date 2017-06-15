@@ -1,0 +1,78 @@
+%icon-base {
+  position: relative;
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  margin: 0 5px;
+
+  &:before,
+  &:after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    top: 50%;
+    border-top: 1px solid black;
+  }
+}
+
+.icon-minus,
+%icon-minus {
+  @extend %icon-base;
+}
+
+.icon-x,
+%icon-x {
+  @extend %icon-base;
+
+  &:before {
+    transform: rotate(45deg);
+  }
+
+  &:after {
+    transform: rotate(-45deg);
+  }
+}
+
+.icon-plus,
+%icon-plus {
+  @extend %icon-x;
+  transform: rotate(45deg)
+}
+
+
+.icon-arrow-left,
+%icon-arrow-left {
+  @extend %icon-x;
+
+  &:before {
+    display: none;
+  }
+
+  &:after {
+    width: 5px;
+    height: 5px;
+    top: 2.5px;
+    border-left: 1px solid black;
+  }
+}
+
+.icon-arrow-right,
+%icon-arrow-right {
+  @extend %icon-arrow-left;
+  transform: rotate(180deg)
+}
+
+.icon-arrow-up,
+%icon-arrow-up {
+  @extend %icon-arrow-left;
+  left: 50%;
+  transform: rotate(90deg);
+}
+
+.icon-arrow-down,
+%icon-arrow-down {
+  @extend %icon-arrow-left;
+  top: 50%;
+  left: 50%;
+  transform: rotate(-90deg);
+}
