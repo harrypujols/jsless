@@ -39,7 +39,7 @@
     display: block;
   }
 
-  &-trigger:checked ~ .accordion-header .accordion-icon {
+  &-trigger:checked ~ .accordion-title .accordion-icon {
     @extend %icon-minus;
   }
 }

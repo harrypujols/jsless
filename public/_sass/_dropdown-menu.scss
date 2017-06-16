@@ -78,6 +78,7 @@
 .has-dropdown {
   .dropdown-icon {
     @extend %icon-arrow-down;
+    margin-left: 10px;
   }
 
   &:hover > a .dropdown-icon {
