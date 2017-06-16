@@ -1,0 +1,28 @@
+.table {
+    table-layout: fixed;
+    width: 100%;
+
+    th {
+      text-align: left;
+    }
+}
+
+.responsive-table {
+  @media (max-width: $breakpoint) {
+    tr, th, td {
+      display: block;
+    }
+
+    thead {
+      display: none;
+    }
+
+    [data-title]:before {
+      content: attr(data-title);
+      width: 45%;
+      padding-right: 10px;
+      white-space: nowrap;
+      font-weight: bold;
+    }
+  }
+}
