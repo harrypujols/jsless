@@ -39,17 +39,14 @@
   ul ul {
   	display: none;
   	background: #fff;
-  	padding: 0;
+  	padding-left: 10px;
 
     @include breakpoint {
       position: absolute;
     	top: 100%;
     	left: 0;
+      padding: 0;
     }
-  }
-
-  ul ul li {
-  	// width: 200px
   }
 
   ul ul a {
