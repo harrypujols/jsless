@@ -5,6 +5,7 @@
   > ul {
     @include breakpoint {
       display: flex;
+      justify-content: space-between;
     }
   }
 
@@ -18,7 +19,6 @@
   	display: block;
   	text-decoration: none;
   	line-height: 32px;
-  	padding: 0 15px;
     white-space: nowrap;
   }
 
@@ -30,10 +30,6 @@
 
   li.active {
 
-  }
-
-  ul li:hover {
-  	background:#f6f6f6
   }
 
   ul ul {
@@ -51,7 +47,11 @@
 
   ul ul a {
   	line-height: 120%;
-  	padding: 10px 15px
+  	padding: 10px 0;
+
+    @include breakpoint {
+      padding-right: 10px;
+    }
   }
 
    ul ul ul {
