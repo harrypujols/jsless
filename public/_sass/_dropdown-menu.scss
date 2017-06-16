@@ -1,9 +1,11 @@
 .nav,
 %nav {
-	margin-top: 15px;
+  margin-top: 15px;
 
   > ul {
-    display: flex;
+    @include breakpoint {
+      display: flex;
+    }
   }
 
   ul {
@@ -17,6 +19,7 @@
   	text-decoration: none;
   	line-height: 32px;
   	padding: 0 15px;
+    white-space: nowrap;
   }
 
   ul li {
@@ -25,8 +28,8 @@
   	padding: 0
   }
 
-  ul li.active {
-  	background:#ddd
+  li.active {
+
   }
 
   ul li:hover {
@@ -35,15 +38,18 @@
 
   ul ul {
   	display: none;
-  	position: absolute;
-  	top: 100%;
-  	left: 0;
   	background: #fff;
-  	padding: 0
+  	padding: 0;
+
+    @include breakpoint {
+      position: absolute;
+    	top: 100%;
+    	left: 0;
+    }
   }
 
   ul ul li {
-  	width: 200px
+  	// width: 200px
   }
 
   ul ul a {
@@ -59,4 +65,15 @@
    ul li:hover > ul {
    	display: block
    }
+}
+
+.has-dropdown {
+
+  .dropdown-icon {
+    @extend %icon-arrow-down;
+  }
+
+  &:hover > a .dropdown-icon {
+    @extend %icon-arrow-up;
+  }
 }

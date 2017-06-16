@@ -1,1 +1,6 @@
 $container-width: 768px;
+$breakpoint: 640px;
+
+@mixin breakpoint {
+  @media (min-width: $breakpoint + 1) { @content;  }
+}
