@@ -4,7 +4,7 @@
 
   > ul {
     border-bottom: 1px solid black;
-    
+
     @include breakpoint {
       display: flex;
       justify-content: space-between;
@@ -76,7 +76,6 @@
 }
 
 .has-dropdown {
-
   .dropdown-icon {
     @extend %icon-arrow-down;
   }

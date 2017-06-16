@@ -6,28 +6,24 @@
 
   &-item {
     border-bottom: 1px solid black;
-    padding: 5px 0;
+    padding: 10px 0;
     position: relative;
-  }
-
-  &-header {
-    display: flex;
-    align-items: center;
   }
 
   &-content {
     display: none;
-    padding-left: 40px;
+    padding-left: 35px;
   }
 
   &-icon {
     @extend %icon-plus;
+    margin-right: 20px;
   }
 
   &-title {
     margin-top: 0;
     margin-bottom: 0;
-    margin-left: 20px;
+    font-weight: bold;
   }
 
   &-trigger {
