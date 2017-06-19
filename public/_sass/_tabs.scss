@@ -3,11 +3,6 @@
   flex-wrap: wrap;
   position: relative;
 
-  &-item,
-  &-trigger {
-    width: 25%;
-  }
-
   &-content {
     display: none;
     position: absolute;
@@ -41,5 +36,26 @@
       border: 1px solid black;
       border-bottom: 0;
     }
+  }
+}
+
+.tabs-two {
+  .tabs-item,
+  .tabs-trigger {
+    width: (100% / 2);
+  }
+}
+
+.tabs-three {
+  .tabs-item,
+  .tabs-trigger {
+    width: (100% / 3);
+  }
+}
+
+.tabs-four {
+  .tabs-item,
+  .tabs-trigger {
+    width: (100% / 4);
   }
 }

@@ -4,4 +4,4 @@ title: About
 permalink: /about/
 ---
 
-This is an about page. Exciting.
+This library keeps styles to a minimum to keep them as customizable as possible.
