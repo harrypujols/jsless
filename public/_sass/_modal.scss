@@ -14,6 +14,8 @@
     width: $breakpoint;
     max-width: calc(100% - 40px);
     min-height: 25vh;
+    max-height: 90vh;
+    overflow-y: auto;
     background-color: white;
     box-sizing: border-box;
   }
