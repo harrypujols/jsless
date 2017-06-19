@@ -1,0 +1,34 @@
+.dropdown,
+%dropdown {
+  position: relative;
+
+  &-trigger {
+    position: absolute;
+    width: 100%;
+    height: 20px;
+    cursor: pointer;
+    z-index: 1;
+    opacity: 0;
+  }
+
+  &-content {
+    display: none;
+  }
+
+  &-title {
+    font-weight: bold;
+  }
+
+  &-icon {
+    @extend %icon-arrow-down;
+    margin-left: 10px;
+  }
+
+  &-trigger:checked ~ .dropdown-content {
+    display: block;
+  }
+
+  &-trigger:checked ~ .dropdown-title .dropdown-icon {
+    @extend %icon-arrow-up;
+  }
+}
