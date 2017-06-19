@@ -3,10 +3,16 @@
   flex-wrap: wrap;
   position: relative;
 
+  &-item {
+    height: 280px;
+  }
+
   &-content {
     display: none;
     position: absolute;
     left: 0;
+    height: 200px;
+    overflow-y: auto;
   }
 
   &-label {
