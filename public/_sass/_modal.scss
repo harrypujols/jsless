@@ -1,0 +1,48 @@
+.modal {
+  &-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, .5);
+    z-index: 100;
+    display: none;
+  }
+
+  &-content {
+    width: $breakpoint;
+    max-width: calc(100% - 40px);
+    min-height: 25vh;
+    background-color: white;
+    box-sizing: border-box;
+  }
+
+  &-header {
+    text-align: right;
+    padding-top: 5px;
+  }
+
+  &-close {
+    cursor: pointer;
+    margin-right: 20px;
+  }
+
+  &-body {
+    padding: 20px;
+  }
+
+  &-trigger {
+    display: inline-block;
+    text-decoration: none;
+    color: inherit;
+    padding: 5px 10px;
+    border: 1px solid black;
+  }
+
+  :target {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
