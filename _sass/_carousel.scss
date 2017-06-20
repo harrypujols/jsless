@@ -20,6 +20,17 @@
   &-button {
     cursor: pointer;
   }
+
+  .icon-arrow-left,
+  .icon-arrow-right {
+    width: 20px;
+    height: 20px;
+
+    &:after {
+      width: 10px;
+      height: 10px;
+    }
+  }
 }
 
 [name=slide]:checked {
