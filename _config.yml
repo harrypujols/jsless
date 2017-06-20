@@ -10,12 +10,13 @@ github_username:  harrypujols
 
 # Build settings
 markdown: kramdown
-# theme: researcher
 gems:
   - jekyll-feed
 exclude:
   - Gemfile
   - Gemfile.lock
 sass:
-    style: compressed
+    style: expanded
     sass_dir: _sass
+    
+livereload: true
