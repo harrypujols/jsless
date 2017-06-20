@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>jsless pattern library</title>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="keywords" content="blog, accent, , jsless pattern library, jekyll">
+    <meta name="author" content="">
+    
+    
+    
+    <meta name="description" content="A collection of UI patterns done entirelly in css
+">
+    <link rel="alternate" type="application/rss+xml" title="jsless pattern library RSS" href="/feed.xml" />
+    <link rel="stylesheet" href="http://harrypujols.com/jsless/css/main.css">
+    
+</head>
+<body>
+    <div class="wrapper">
+        <div class="navbar container">
+            <a class="branding site-title" href="http://harrypujols.com/jsless">jsless pattern library</a>
+            <ul class="horizontal-menu">
+                
+                  
+                      <li class="horizontal-menu-item"><a href="/about/">About</a>
+                  
+                  
+                      </li>
+                
+            </ul>
+        </div>
+        <hr class="divider">
+        
+            <div class="container content">
+                <h1>jsless pattern library</h1>
+
+<section class="section">
+  <h2>Modal</h2>
+  <div class="modal">
+  <div class="modal-overlay" id="modal">
+    <div class="modal-content">
+      <div class="modal-header">
+        <a href="#" class="modal-close"></a>
+      </div>
+      <div class="modal-body">
+        <p>This is a modal. Woo.</p>
+        <a href="#" class="modal-trigger">Close</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<a href="#modal" class="modal-trigger">Activate Modal</a>
+
+</section>
+
+<section class="section">
+  <h2>Accordion</h2>
+  <ul class="accordion">
+  <li class="accordion-item">
+    <input type="checkbox" class="accordion-trigger">
+    <label class="accordion-title"><span class="accordion-icon"></span>Accordion title</label>
+    <div class="accordion-content">
+      <p>Some lorem ipsum dolor sit amet here.</p>
+    </div>
+  </li>
+  <li class="accordion-item">
+    <input type="checkbox" class="accordion-trigger">
+    <label class="accordion-title"><span class="accordion-icon"></span>Accordion title</label>
+    <div class="accordion-content">
+      <p>Some lorem ipsum dolor sit amet here.</p>
+    </div>
+  </li>
+</ul>
+
+</section>
+
+<section class="section">
+  <h2>Dropdown</h2>
+  <div class="dropdown">
+  <input type="checkbox" class="dropdown-trigger">
+  <label class="dropdown-title">Basic Dropdown<span class="dropdown-icon"></span></label>
+  <div class="dropdown-content">
+    <p>Basic lorem ipsum dolor sit amet stuff.</p>
+  </div>
+</div>
+
+</section>
+
+<section class="section">
+  <h2>Dropdown Menu</h2>
+  <nav class="nav">
+<ul>
+  <li class="active"><a href="#">Home</a></li>
+  <li class="has-dropdown"><a href="#">Menu 1 <span class="dropdown-icon"></span></a>
+    <ul>
+      <li><a href="#">Sub Menu 1</a></li>
+      <li><a href="#">Sub Menu 2</a></li>
+      <li><a href="#">Sub Menu 3</a></li>
+      <li class="has-dropdown"><a href="#">Sub Menu 4 <span class="dropdown-icon"></span></a>
+        <ul>
+          <li class="has-dropdown"><a href="#">Deep Menu 1 <span class="dropdown-icon"></span></a>
+            <ul>
+              <li><a href="#">Sub Deep 1</a></li>
+              <li><a href="#">Sub Deep 2</a></li>
+              <li><a href="#">Sub Deep 3</a></li>
+              <li><a href="#">Sub Deep 4</a></li>
+            </ul>
+          </li>
+          <li><a href="#">Deep Menu 2</a></li>
+        </ul>
+      </li>
+      <li><a href="#">Sub Menu 5</a></li>
+    </ul>
+  </li>
+  <li class="has-dropdown"><a href="#">Menu 2 <span class="dropdown-icon"></span></a>
+    <ul>
+      <li><a href="#">Sub Menu 1</a></li>
+      <li><a href="#">Sub Menu 2</a></li>
+      <li><a href="#">Sub Menu 3</a></li>
+    </ul>
+  </li>
+  <li><a href="#">Menu 3</a></li>
+</ul>
+</nav>
+
+</section>
+
+<section class="section">
+  <h2>Responsive Table</h2>
+  <table class="table responsive-table">
+  <thead>
+    <tr>
+      <th>Item 1</th>
+      <th>Item 2</th>
+      <th>Item 3</th>
+      <th>Item 4</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td data-title="Item 1">Foo</td>
+      <td data-title="Item 2">Bar</td>
+      <td data-title="Item 3">Zazs</td>
+      <td data-title="Item 4">Buzz</td>
+    </tr>
+  </tbody>
+</table>
+
+</section>
+
+<section class="section">
+  <h2>Carousel</h2>
+  <div class="carousel">
+  <label for="slide-1" class="carousel-button"><span class="icon-arrow-left"></span></label>
+  <div class="carousel-inner">
+    <div class="carousel-item">
+      <input type="radio" id="slide-1" class="carousel-trigger" name="slide" hidden checked>
+      <div class="carousel-content">
+        <p>Some slide 1 lorem ipsum</p>
+      </div>
+    </div>
+
+    <div class="carousel-item">
+      <input type="radio" id="slide-2" class="carousel-trigger" name="slide" hidden>
+      <div class="carousel-content">
+        <p>The slide 2 lorem ipsum</p>
+      </div>
+    </div>
+  </div>
+    <label for="slide-2" class="carousel-button"><span class="icon-arrow-right"></span></label>
+</div>
+
+</section>
+
+<section class="section">
+  <h2>Tabs</h2>
+  <div class="tabs tabs-four">
+  <div class="tabs-item">
+    <input type="radio" id="tab1" name="tab" class="tabs-trigger" checked>
+    <label for="tab1" class="tabs-label">Tab 1</label>
+    <div class="tabs-content">
+      Lorem ipsum dolor sit amet stuff for tab 1 goes around here.
+    </div>
+  </div>
+
+  <div class="tabs-item">
+      <input type="radio" id="tab2" name="tab" class="tabs-trigger">
+      <label for="tab2" class="tabs-label">Tab 2</label>
+      <div class="tabs-content">
+        Another lorem ipsum dolor sit amet stuff over here for tab 2.
+      </div>
+  </div>
+
+  <div class="tabs-item">
+      <input type="radio" id="tab3" name="tab" class="tabs-trigger">
+      <label for="tab3" class="tabs-label">Tab 3</label>
+      <div class="tabs-content">
+        For the third tab, we'll do another lorem ipsum dolor sit amet.
+      </div>
+  </div>
+
+  <div class="tabs-item">
+      <input type="radio" id="tab4" name="tab" class="tabs-trigger">
+      <label for="tab4" class="tabs-label">Tab 4</label>
+      <div class="tabs-content">
+        And the last tab here will have more lorem ipsum dolor sit amet.
+      </div>
+  </div>
+</div>
+
+</section>
+
+            </div>
+        
+    </div>
+    <script src="http://harrypujols.com/jsless/js/main.js"></script>
+</body>
