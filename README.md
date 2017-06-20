@@ -1,5 +1,7 @@
 # jsless-pattern-library
+
 A collection of UI patterns done entirely in css.
+
 Online at [harrypujols.com/jsless](http://harrypujols.com/jsless)
 
 ## Development
