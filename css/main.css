@@ -1,1 +1,41 @@
-.wrapper{font-family:sans-serif}.container{max-width:768px;margin:0 auto;padding:0 20px}.divider{border:0;border-top:1px solid black}.section{margin:100px 0}.navbar{display:flex;justify-content:space-between;padding:10px 20px}.navbar a{text-decoration:none}.horizontal-menu{display:flex;padding:0;margin:0;list-style:none}.horizontal-menu-item{text-transform:lowercase}
+/* Site's globals
+   ========================================================================== */
+.wrapper {
+  font-family: sans-serif;
+}
+
+.container {
+  max-width: 768px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.divider {
+  border: 0;
+  border-top: 1px solid black;
+}
+
+.section {
+  margin: 100px 0;
+}
+
+/* Site's navbar
+   ========================================================================== */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 20px;
+}
+.navbar a {
+  text-decoration: none;
+}
+
+.horizontal-menu {
+  display: flex;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+.horizontal-menu-item {
+  text-transform: lowercase;
+}
