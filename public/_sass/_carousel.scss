@@ -1,0 +1,21 @@
+.carousel {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  &-inner {
+    flex-grow: 1;
+    text-align: center;
+  }
+
+  &-content {
+    display: none;
+    width: 100%;
+  }
+}
+
+[name=slide]:checked {
+  ~ .carousel-content {
+    display: block;
+  }
+}
