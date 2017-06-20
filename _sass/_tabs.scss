@@ -1,4 +1,8 @@
-.tabs {
+/* Tabs
+   ========================================================================== */
+
+.tabs,
+%tabs {
   display: flex;
   flex-wrap: wrap;
   position: relative;
