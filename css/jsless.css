@@ -715,6 +715,16 @@ template {
 .carousel-button {
   cursor: pointer;
 }
+.carousel .icon-arrow-left,
+.carousel .icon-arrow-right {
+  width: 20px;
+  height: 20px;
+}
+.carousel .icon-arrow-left:after,
+.carousel .icon-arrow-right:after {
+  width: 10px;
+  height: 10px;
+}
 
 [name=slide]:checked ~ .carousel-content {
   display: block;
