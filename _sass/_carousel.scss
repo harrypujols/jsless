@@ -12,6 +12,10 @@
     display: none;
     width: 100%;
   }
+
+  &-button {
+    cursor: pointer;
+  }
 }
 
 [name=slide]:checked {
