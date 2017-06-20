@@ -22,8 +22,8 @@
     {% endif %}
     <meta name="description" content="{{ desc }}">
     <link rel="alternate" type="application/rss+xml" title="{{ site.title }} RSS" href="/feed.xml" />
-    <link rel="stylesheet" href="/css/main.css">
-    <link rel="stylesheet" href="/css/jsless.css">
+    <link rel="stylesheet" href="{{ site.url }}{{ site.baseurl }}/css/main.css">
+    <link rel="stylesheet" href="{{ site.url }}{{ site.baseurl }}/css/jsless.css">
     {% if site.favicon %}
         <link rel="icon" type="image/ico" href="{{ site.favicon_location }}">
         <link rel="shortcut-icon" type="image/ico" href="{{ site.favicon_location }}">
@@ -36,9 +36,9 @@
             <ul class="horizontal-menu">
                 {% for x in site.data.nav %}
                   {% if x.link == page.url %}
-                      <li class="horizontal-menu-item active"><a href="{{ x.link }}">{{ x.name }}</a>
+                      <li class="horizontal-menu-item active"><a href="{{ site.url }}{{ site.baseurl }}{{ x.link }}">{{ x.name }}</a>
                   {% else %}
-                      <li class="horizontal-menu-item"><a href="{{ x.link }}">{{ x.name }}</a>
+                      <li class="horizontal-menu-item"><a href="{{ site.url }}{{ site.baseurl }}{{ x.link }}">{{ x.name }}</a>
                   {% endif %}
                   {% if forloop.first == false %}
                       /
@@ -58,5 +58,5 @@
             </div>
         {% endif %}
     </div>
-    <script src="/js/main.js"></script>
+    <script src="{{ site.url }}{{ site.baseurl }}/js/main.js"></script>
 </body>
