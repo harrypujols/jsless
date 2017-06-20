@@ -5,7 +5,7 @@
 
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="keywords" content="blog, accent, {{ site.author }}, {{ site.title }}, jekyll">
+    <meta name="keywords" content="{{ site.author }}, {{ site.title }}">
     <meta name="author" content="{{ site.author }}">
     {% if page.url == "/404.html" %}
         <meta http-equiv="refresh" content="5; url=/">
@@ -34,11 +34,11 @@
         <div class="navbar container">
             <a class="branding site-title" href="{{ site.url }}{{ site.baseurl }}">{{ site.title }}</a>
             <ul class="horizontal-menu">
-                {% for x in site.data.nav %}
-                  {% if x.link == page.url %}
-                      <li class="horizontal-menu-item active"><a href="{{ site.url }}{{ site.baseurl }}{{ x.link }}">{{ x.name }}</a>
+                {% for item in site.data.nav %}
+                  {% if item.link == page.url %}
+                      <li class="horizontal-menu-item active"><a href="{{ site.url }}{{ site.baseurl }}{{ item.link }}">{{ item.name }}</a>
                   {% else %}
-                      <li class="horizontal-menu-item"><a href="{{ site.url }}{{ site.baseurl }}{{ x.link }}">{{ x.name }}</a>
+                      <li class="horizontal-menu-item"><a href="{{ site.url }}{{ site.baseurl }}{{ item.link }}">{{ item.name }}</a>
                   {% endif %}
                   {% if forloop.first == false %}
                       /
