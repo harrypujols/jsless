@@ -1,0 +1,20 @@
+.highlight {
+  padding: 20px;
+  margin: 20px 0 0 0;
+  border: 1px solid black;
+  color: grey;
+
+  pre {
+    margin: 0;
+  }
+
+  .nt,
+  .na,
+  .s {
+    color: black;
+  }
+
+  .s {
+    font-weight: bold;
+  }
+}
