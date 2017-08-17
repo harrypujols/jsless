@@ -17,3 +17,29 @@
   </div>
     <label for="slide-2" class="carousel-button"><span class="icon-arrow-right"></span></label>
 </div>
+
+{% highlight html %}
+<div class="carousel">
+  <label for="slide-1" class="carousel-button">
+    <span class="icon-arrow-left"></span>
+  </label>
+  <div class="carousel-inner">
+    <div class="carousel-item">
+      <input type="radio" id="slide-1" class="carousel-trigger" name="slide" hidden checked>
+      <div class="carousel-content">
+        <p>Some slide 1 lorem ipsum</p>
+      </div>
+    </div>
+
+    <div class="carousel-item">
+      <input type="radio" id="slide-2" class="carousel-trigger" name="slide" hidden>
+      <div class="carousel-content">
+        <p>The slide 2 lorem ipsum</p>
+      </div>
+    </div>
+  </div>
+  <label for="slide-2" class="carousel-button">
+    <span class="icon-arrow-right"></span>
+  </label>
+</div>
+{% endhighlight %}

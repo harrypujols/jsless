@@ -8,14 +8,14 @@
   position: relative;
 
   &-item {
-    height: 280px;
+    min-height: 180px;
   }
 
   &-content {
     display: none;
     position: absolute;
     left: 0;
-    height: 200px;
+    height: 100px;
     overflow-y: auto;
   }
 
