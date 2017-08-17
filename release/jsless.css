@@ -561,6 +561,14 @@ template {
   transform: rotate(225deg);
 }
 
+.button {
+  display: inline-block;
+  text-decoration: none;
+  color: inherit;
+  padding: 5px 10px;
+  border: 1px solid black;
+}
+
 /* Accordion
    ========================================================================== */
 .accordion {
@@ -765,13 +773,13 @@ template {
   position: relative;
 }
 .tabs-item {
-  height: 280px;
+  min-height: 180px;
 }
 .tabs-content {
   display: none;
   position: absolute;
   left: 0;
-  height: 200px;
+  height: 100px;
   overflow-y: auto;
 }
 .tabs-label {
@@ -847,13 +855,6 @@ template {
 }
 .modal-body {
   padding: 0 20px 20px;
-}
-.modal-trigger {
-  display: inline-block;
-  text-decoration: none;
-  color: inherit;
-  padding: 5px 10px;
-  border: 1px solid black;
 }
 .modal :target {
   display: flex;

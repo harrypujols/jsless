@@ -14,7 +14,7 @@
 ">
     <link rel="alternate" type="application/rss+xml" title="jsless pattern library RSS" href="/feed.xml" />
     <link rel="stylesheet" href="http://harrypujols.com/jsless/css/main.css">
-    <link rel="stylesheet" href="http://harrypujols.com/jsless/css/jsless.css">
+    <link rel="stylesheet" href="http://harrypujols.com/jsless/release/jsless.css">
     
 </head>
 <body>
@@ -24,8 +24,12 @@
             <ul class="horizontal-menu">
                 
                   
-                      <li class="horizontal-menu-item"><a href="http://harrypujols.com/jsless/about/">About</a>
+                      <li class="horizontal-menu-item"><a href="about">About</a>
                   
+                      </li>
+                
+                  
+                      <li class="horizontal-menu-item"><a href="https://github.com/harrypujols/jsless">Github</a>
                   
                       </li>
                 
@@ -35,6 +39,31 @@
         
             <div class="container content">
                 <h1>jsless pattern library</h1>
+<a class="button" href="https://github.com/harrypujols/jsless/archive/0.1.zip">
+  Download
+</a>
+
+<section class="section">
+  <h2>Dropdown</h2>
+  <div class="dropdown">
+  <input type="checkbox" class="dropdown-trigger">
+  <label class="dropdown-title">Basic Dropdown<span class="dropdown-icon"></span></label>
+  <div class="dropdown-content">
+    <p>Basic lorem ipsum dolor sit amet stuff.</p>
+  </div>
+</div>
+
+<figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"dropdown"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">"checkbox"</span> <span class="na">class=</span><span class="s">"dropdown-trigger"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;label</span> <span class="na">class=</span><span class="s">"dropdown-title"</span><span class="nt">&gt;</span>
+    Basic Dropdown<span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"dropdown-icon"</span><span class="nt">&gt;&lt;/span&gt;</span>
+  <span class="nt">&lt;/label&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"dropdown-content"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;p&gt;</span>Basic lorem ipsum dolor sit amet stuff.<span class="nt">&lt;/p&gt;</span>
+  <span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;/div&gt;</span></code></pre></figure>
+
+</section>
 
 <section class="section">
   <h2>Modal</h2>
@@ -46,13 +75,28 @@
       </div>
       <div class="modal-body">
         <p>This is a modal. Woo.</p>
-        <a href="#" class="modal-trigger">Close</a>
+        <a href="#" class="modal-trigger button">Close</a>
       </div>
     </div>
   </div>
 </div>
 
-<a href="#modal" class="modal-trigger">Activate Modal</a>
+<a href="#modal" class="modal-trigger button">Activate Modal</a>
+
+
+<figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"modal"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"modal-overlay"</span> <span class="na">id=</span><span class="s">"modal"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"modal-content"</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"modal-header"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"#"</span> <span class="na">class=</span><span class="s">"modal-close"</span><span class="nt">&gt;&lt;/a&gt;</span>
+      <span class="nt">&lt;/div&gt;</span>
+      <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"modal-body"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;p&gt;</span>This is a modal. Woo.<span class="nt">&lt;/p&gt;</span>
+        <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"#"</span> <span class="na">class=</span><span class="s">"modal-trigger button"</span><span class="nt">&gt;</span>Close<span class="nt">&lt;/a&gt;</span>
+      <span class="nt">&lt;/div&gt;</span>
+    <span class="nt">&lt;/div&gt;</span>
+  <span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;/div&gt;</span></code></pre></figure>
 
 </section>
 
@@ -75,17 +119,29 @@
   </li>
 </ul>
 
-</section>
 
-<section class="section">
-  <h2>Dropdown</h2>
-  <div class="dropdown">
-  <input type="checkbox" class="dropdown-trigger">
-  <label class="dropdown-title">Basic Dropdown<span class="dropdown-icon"></span></label>
-  <div class="dropdown-content">
-    <p>Basic lorem ipsum dolor sit amet stuff.</p>
-  </div>
-</div>
+<figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;ul</span> <span class="na">class=</span><span class="s">"accordion"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"accordion-item"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">"checkbox"</span> <span class="na">class=</span><span class="s">"accordion-trigger"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;label</span> <span class="na">class=</span><span class="s">"accordion-title"</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"accordion-icon"</span><span class="nt">&gt;&lt;/span&gt;</span>
+      Accordion title
+    <span class="nt">&lt;/label&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"accordion-content"</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;p&gt;</span>Some lorem ipsum dolor sit amet here.<span class="nt">&lt;/p&gt;</span>
+    <span class="nt">&lt;/div&gt;</span>
+  <span class="nt">&lt;/li&gt;</span>
+  <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"accordion-item"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">"checkbox"</span> <span class="na">class=</span><span class="s">"accordion-trigger"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;label</span> <span class="na">class=</span><span class="s">"accordion-title"</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"accordion-icon"</span><span class="nt">&gt;&lt;/span&gt;</span>
+      Accordion title
+    <span class="nt">&lt;/label&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"accordion-content"</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;p&gt;</span>Some lorem ipsum dolor sit amet here.<span class="nt">&lt;/p&gt;</span>
+    <span class="nt">&lt;/div&gt;</span>
+  <span class="nt">&lt;/li&gt;</span>
+<span class="nt">&lt;/ul&gt;</span></code></pre></figure>
 
 </section>
 
@@ -126,6 +182,53 @@
 </ul>
 </nav>
 
+<figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;nav</span> <span class="na">class=</span><span class="s">"nav"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;ul&gt;</span>
+    <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"active"</span><span class="nt">&gt;&lt;a</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>Home<span class="nt">&lt;/a&gt;&lt;/li&gt;</span>
+    <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"has-dropdown"</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>
+        Menu 1 <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"dropdown-icon"</span><span class="nt">&gt;&lt;/span&gt;</span>
+      <span class="nt">&lt;/a&gt;</span>
+      <span class="nt">&lt;ul&gt;</span>
+        <span class="nt">&lt;li&gt;&lt;a</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>Sub Menu 1<span class="nt">&lt;/a&gt;&lt;/li&gt;</span>
+        <span class="nt">&lt;li&gt;&lt;a</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>Sub Menu 2<span class="nt">&lt;/a&gt;&lt;/li&gt;</span>
+        <span class="nt">&lt;li&gt;&lt;a</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>Sub Menu 3<span class="nt">&lt;/a&gt;&lt;/li&gt;</span>
+        <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"has-dropdown"</span><span class="nt">&gt;</span>
+          <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>
+            Sub Menu 4 <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"dropdown-icon"</span><span class="nt">&gt;&lt;/span&gt;</span>
+          <span class="nt">&lt;/a&gt;</span>
+          <span class="nt">&lt;ul&gt;</span>
+            <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"has-dropdown"</span><span class="nt">&gt;</span>
+              <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>
+                Deep Menu 1 <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"dropdown-icon"</span><span class="nt">&gt;&lt;/span&gt;</span>
+              <span class="nt">&lt;/a&gt;</span>
+              <span class="nt">&lt;ul&gt;</span>
+                <span class="nt">&lt;li&gt;&lt;a</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>Sub Deep 1<span class="nt">&lt;/a&gt;&lt;/li&gt;</span>
+                <span class="nt">&lt;li&gt;&lt;a</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>Sub Deep 2<span class="nt">&lt;/a&gt;&lt;/li&gt;</span>
+                <span class="nt">&lt;li&gt;&lt;a</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>Sub Deep 3<span class="nt">&lt;/a&gt;&lt;/li&gt;</span>
+                <span class="nt">&lt;li&gt;&lt;a</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>Sub Deep 4<span class="nt">&lt;/a&gt;&lt;/li&gt;</span>
+              <span class="nt">&lt;/ul&gt;</span>
+            <span class="nt">&lt;/li&gt;</span>
+            <span class="nt">&lt;li&gt;&lt;a</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>Deep Menu 2<span class="nt">&lt;/a&gt;&lt;/li&gt;</span>
+          <span class="nt">&lt;/ul&gt;</span>
+        <span class="nt">&lt;/li&gt;</span>
+        <span class="nt">&lt;li&gt;&lt;a</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>Sub Menu 5<span class="nt">&lt;/a&gt;&lt;/li&gt;</span>
+      <span class="nt">&lt;/ul&gt;</span>
+    <span class="nt">&lt;/li&gt;</span>
+    <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"has-dropdown"</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>
+        Menu 2 <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"dropdown-icon"</span><span class="nt">&gt;&lt;/span&gt;</span>
+      <span class="nt">&lt;/a&gt;</span>
+      <span class="nt">&lt;ul&gt;</span>
+        <span class="nt">&lt;li&gt;&lt;a</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>Sub Menu 1<span class="nt">&lt;/a&gt;&lt;/li&gt;</span>
+        <span class="nt">&lt;li&gt;&lt;a</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>Sub Menu 2<span class="nt">&lt;/a&gt;&lt;/li&gt;</span>
+        <span class="nt">&lt;li&gt;&lt;a</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>Sub Menu 3<span class="nt">&lt;/a&gt;&lt;/li&gt;</span>
+      <span class="nt">&lt;/ul&gt;</span>
+    <span class="nt">&lt;/li&gt;</span>
+    <span class="nt">&lt;li&gt;&lt;a</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>Menu 3<span class="nt">&lt;/a&gt;&lt;/li&gt;</span>
+  <span class="nt">&lt;/ul&gt;</span>
+<span class="nt">&lt;/nav&gt;</span></code></pre></figure>
+
 </section>
 
 <section class="section">
@@ -148,6 +251,25 @@
     </tr>
   </tbody>
 </table>
+
+<figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;table</span> <span class="na">class=</span><span class="s">"table responsive-table"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;thead&gt;</span>
+    <span class="nt">&lt;tr&gt;</span>
+      <span class="nt">&lt;th&gt;</span>Item 1<span class="nt">&lt;/th&gt;</span>
+      <span class="nt">&lt;th&gt;</span>Item 2<span class="nt">&lt;/th&gt;</span>
+      <span class="nt">&lt;th&gt;</span>Item 3<span class="nt">&lt;/th&gt;</span>
+      <span class="nt">&lt;th&gt;</span>Item 4<span class="nt">&lt;/th&gt;</span>
+    <span class="nt">&lt;/tr&gt;</span>
+  <span class="nt">&lt;/thead&gt;</span>
+  <span class="nt">&lt;tbody&gt;</span>
+    <span class="nt">&lt;tr&gt;</span>
+      <span class="nt">&lt;td</span> <span class="na">data-title=</span><span class="s">"Item 1"</span><span class="nt">&gt;</span>Foo<span class="nt">&lt;/td&gt;</span>
+      <span class="nt">&lt;td</span> <span class="na">data-title=</span><span class="s">"Item 2"</span><span class="nt">&gt;</span>Bar<span class="nt">&lt;/td&gt;</span>
+      <span class="nt">&lt;td</span> <span class="na">data-title=</span><span class="s">"Item 3"</span><span class="nt">&gt;</span>Zazs<span class="nt">&lt;/td&gt;</span>
+      <span class="nt">&lt;td</span> <span class="na">data-title=</span><span class="s">"Item 4"</span><span class="nt">&gt;</span>Buzz<span class="nt">&lt;/td&gt;</span>
+    <span class="nt">&lt;/tr&gt;</span>
+  <span class="nt">&lt;/tbody&gt;</span>
+<span class="nt">&lt;/table&gt;</span></code></pre></figure>
 
 </section>
 
@@ -172,6 +294,30 @@
   </div>
     <label for="slide-2" class="carousel-button"><span class="icon-arrow-right"></span></label>
 </div>
+
+<figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"carousel"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;label</span> <span class="na">for=</span><span class="s">"slide-1"</span> <span class="na">class=</span><span class="s">"carousel-button"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"icon-arrow-left"</span><span class="nt">&gt;&lt;/span&gt;</span>
+  <span class="nt">&lt;/label&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"carousel-inner"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"carousel-item"</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">"radio"</span> <span class="na">id=</span><span class="s">"slide-1"</span> <span class="na">class=</span><span class="s">"carousel-trigger"</span> <span class="na">name=</span><span class="s">"slide"</span> <span class="na">hidden</span> <span class="na">checked</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"carousel-content"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;p&gt;</span>Some slide 1 lorem ipsum<span class="nt">&lt;/p&gt;</span>
+      <span class="nt">&lt;/div&gt;</span>
+    <span class="nt">&lt;/div&gt;</span>
+
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"carousel-item"</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">"radio"</span> <span class="na">id=</span><span class="s">"slide-2"</span> <span class="na">class=</span><span class="s">"carousel-trigger"</span> <span class="na">name=</span><span class="s">"slide"</span> <span class="na">hidden</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"carousel-content"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;p&gt;</span>The slide 2 lorem ipsum<span class="nt">&lt;/p&gt;</span>
+      <span class="nt">&lt;/div&gt;</span>
+    <span class="nt">&lt;/div&gt;</span>
+  <span class="nt">&lt;/div&gt;</span>
+  <span class="nt">&lt;label</span> <span class="na">for=</span><span class="s">"slide-2"</span> <span class="na">class=</span><span class="s">"carousel-button"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"icon-arrow-right"</span><span class="nt">&gt;&lt;/span&gt;</span>
+  <span class="nt">&lt;/label&gt;</span>
+<span class="nt">&lt;/div&gt;</span></code></pre></figure>
 
 </section>
 
@@ -210,6 +356,40 @@
       </div>
   </div>
 </div>
+
+<figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"tabs tabs-four"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"tabs-item"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">"radio"</span> <span class="na">id=</span><span class="s">"tab1"</span> <span class="na">name=</span><span class="s">"tab"</span> <span class="na">class=</span><span class="s">"tabs-trigger"</span> <span class="na">checked</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;label</span> <span class="na">for=</span><span class="s">"tab1"</span> <span class="na">class=</span><span class="s">"tabs-label"</span><span class="nt">&gt;</span>Tab 1<span class="nt">&lt;/label&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"tabs-content"</span><span class="nt">&gt;</span>
+      Lorem ipsum dolor sit amet stuff for tab 1 goes around here.
+    <span class="nt">&lt;/div&gt;</span>
+  <span class="nt">&lt;/div&gt;</span>
+
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"tabs-item"</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">"radio"</span> <span class="na">id=</span><span class="s">"tab2"</span> <span class="na">name=</span><span class="s">"tab"</span> <span class="na">class=</span><span class="s">"tabs-trigger"</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;label</span> <span class="na">for=</span><span class="s">"tab2"</span> <span class="na">class=</span><span class="s">"tabs-label"</span><span class="nt">&gt;</span>Tab 2<span class="nt">&lt;/label&gt;</span>
+      <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"tabs-content"</span><span class="nt">&gt;</span>
+        Another lorem ipsum dolor sit amet stuff over here for tab 2.
+      <span class="nt">&lt;/div&gt;</span>
+  <span class="nt">&lt;/div&gt;</span>
+
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"tabs-item"</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">"radio"</span> <span class="na">id=</span><span class="s">"tab3"</span> <span class="na">name=</span><span class="s">"tab"</span> <span class="na">class=</span><span class="s">"tabs-trigger"</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;label</span> <span class="na">for=</span><span class="s">"tab3"</span> <span class="na">class=</span><span class="s">"tabs-label"</span><span class="nt">&gt;</span>Tab 3<span class="nt">&lt;/label&gt;</span>
+      <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"tabs-content"</span><span class="nt">&gt;</span>
+        For the third tab, we'll do another lorem ipsum dolor sit amet.
+      <span class="nt">&lt;/div&gt;</span>
+  <span class="nt">&lt;/div&gt;</span>
+
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"tabs-item"</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">"radio"</span> <span class="na">id=</span><span class="s">"tab4"</span> <span class="na">name=</span><span class="s">"tab"</span> <span class="na">class=</span><span class="s">"tabs-trigger"</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;label</span> <span class="na">for=</span><span class="s">"tab4"</span> <span class="na">class=</span><span class="s">"tabs-label"</span><span class="nt">&gt;</span>Tab 4<span class="nt">&lt;/label&gt;</span>
+      <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"tabs-content"</span><span class="nt">&gt;</span>
+        And the last tab here will have more lorem ipsum dolor sit amet.
+      <span class="nt">&lt;/div&gt;</span>
+  <span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;/div&gt;</span></code></pre></figure>
 
 </section>
 

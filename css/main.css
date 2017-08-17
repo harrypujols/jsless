@@ -39,3 +39,25 @@
 .horizontal-menu-item {
   text-transform: lowercase;
 }
+.horizontal-menu a {
+  margin-left: 20px;
+}
+
+.highlight {
+  padding: 20px;
+  margin: 20px 0 0 0;
+  border: 1px solid black;
+  color: grey;
+  overflow: auto;
+}
+.highlight pre {
+  margin: 0;
+}
+.highlight .nt,
+.highlight .na,
+.highlight .s {
+  color: black;
+}
+.highlight .s {
+  font-weight: bold;
+}
