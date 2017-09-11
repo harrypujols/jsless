@@ -21,6 +21,12 @@
     cursor: pointer;
   }
 
+  &-trigger:checked {
+    ~ .carousel-content {
+      display: block;
+    }
+  }
+
   .icon-arrow-left,
   .icon-arrow-right {
     width: 20px;
@@ -30,11 +36,5 @@
       width: 10px;
       height: 10px;
     }
-  }
-}
-
-[name=slide]:checked {
-  ~ .carousel-content {
-    display: block;
   }
 }

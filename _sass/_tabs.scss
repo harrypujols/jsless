@@ -29,22 +29,22 @@
   &-label {
     padding: 10px 20px;
   }
-}
 
-[name=tab] {
-  position: absolute;
-  height: 39px;
-  opacity: 0;
+  &-trigger {
+    position: absolute;
+    height: 39px;
+    opacity: 0;
 
-  &:checked {
-    ~ .tabs-content {
-      display: block;
-    }
+    &:checked {
+      ~ .tabs-content {
+        display: block;
+      }
 
-    ~ .tabs-label {
-      font-weight: bold;
-      border: 1px solid black;
-      border-bottom: 0;
+      ~ .tabs-label {
+        font-weight: bold;
+        border: 1px solid black;
+        border-bottom: 0;
+      }
     }
   }
 }
