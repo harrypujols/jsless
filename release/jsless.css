@@ -291,6 +291,9 @@
 .carousel-button {
   cursor: pointer;
 }
+.carousel-trigger:checked ~ .carousel-content {
+  display: block;
+}
 .carousel .icon-arrow-left,
 .carousel .icon-arrow-right {
   width: 20px;
@@ -300,10 +303,6 @@
 .carousel .icon-arrow-right:after {
   width: 10px;
   height: 10px;
-}
-
-[name=slide]:checked ~ .carousel-content {
-  display: block;
 }
 
 /* Table
@@ -358,16 +357,15 @@
 .tabs-content, .tabs-label {
   padding: 10px 20px;
 }
-
-[name=tab] {
+.tabs-trigger {
   position: absolute;
   height: 39px;
   opacity: 0;
 }
-[name=tab]:checked ~ .tabs-content {
+.tabs-trigger:checked ~ .tabs-content {
   display: block;
 }
-[name=tab]:checked ~ .tabs-label {
+.tabs-trigger:checked ~ .tabs-label {
   font-weight: bold;
   border: 1px solid black;
   border-bottom: 0;
@@ -380,7 +378,7 @@
 
 .tabs-three .tabs-item,
 .tabs-three .tabs-trigger {
-  width: 33.33333%;
+  width: 33.3333333333%;
 }
 
 .tabs-four .tabs-item,
