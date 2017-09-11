@@ -58,6 +58,5 @@ typings/
 .env
 
 _site
-_site/release
 .sass-cache
 .jekyll-metadata
