@@ -1,7 +1,6 @@
 /* Menu
    ========================================================================== */
-   
-.nav,
+.#{$namespace}nav,
 %nav {
   margin-top: 15px;
 
@@ -79,12 +78,12 @@
 }
 
 .has-dropdown {
-  .dropdown-icon {
+  .#{$namespace}dropdown-icon {
     @extend %icon-arrow-down;
     margin-left: 10px;
   }
 
-  &:hover > a .dropdown-icon {
+  &:hover > a .#{$namespace}dropdown-icon {
     @extend %icon-arrow-up;
   }
 }

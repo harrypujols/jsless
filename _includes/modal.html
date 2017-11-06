@@ -1,33 +1,32 @@
-<div class="modal">
-  <div class="modal-overlay" id="modal">
-    <div class="modal-content">
-      <div class="modal-header">
-        <a role="button" aria-label="close" href="#" class="modal-close"></a>
+<div class="{{ site.namespace }}modal">
+  <div class="{{ site.namespace }}modal-overlay" id="modal">
+    <div class="{{ site.namespace }}modal-content">
+      <div class="{{ site.namespace }}modal-header">
+        <a role="button" aria-label="close" href="#" class="{{ site.namespace }}modal-close"></a>
       </div>
-      <div class="modal-body">
+      <div class="{{ site.namespace }}modal-body">
         <p>This is a modal. Woo.</p>
-        <a role="button" href="#" class="modal-trigger button">Close</a>
+        <a role="button" contenteditable=""href="#" class="{{ site.namespace }}modal-trigger {{ site.namespace }}button">Close</a>
       </div>
     </div>
   </div>
 </div>
-
-<a role="dialog" aria-describedby="modal" href="#modal" class="modal-trigger button">Activate Modal</a>
+<a role="dialog" aria-describedby="modal" href="#modal" class="{{ site.namespace }}modal-trigger {{ site.namespace }}button">Activate Modal</a>
 
 
 {% highlight html %}
-<div class="modal">
-  <div class="modal-overlay" id="modal">
-    <div class="modal-content">
-      <div class="modal-header">
-        <a role="button" aria-label="close" href="#" class="modal-close"></a>
+<div class="{{ site.namespace }}modal">
+  <div class="{{ site.namespace }}modal-overlay" id="modal">
+    <div class="{{ site.namespace }}modal-content">
+      <div class="{{ site.namespace }}modal-header">
+        <a role="button" aria-label="close" href="#" class="{{ site.namespace }}modal-close"></a>
       </div>
-      <div class="modal-body">
+      <div class="{{ site.namespace }}modal-body">
         <p>This is a modal. Woo.</p>
-        <a role="button" contenteditable=""href="#" class="modal-trigger button">Close</a>
+        <a role="button" contenteditable=""href="#" class="{{ site.namespace }}modal-trigger {{ site.namespace }}button">Close</a>
       </div>
     </div>
   </div>
 </div>
-<a role="dialog" aria-describedby="modal" href="#modal" class="modal-trigger button">Activate Modal</a>
+<a role="dialog" aria-describedby="modal" href="#modal" class="{{ site.namespace }}modal-trigger {{ site.namespace }}button">Activate Modal</a>
 {% endhighlight %}

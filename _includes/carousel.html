@@ -1,49 +1,49 @@
-<div class="carousel">
-  <label role="button" aria-label="prev" for="slide-1" class="carousel-button">
-    <span class="icon-arrow-left"></span>
+<div class="{{ site.namespace }}carousel">
+  <label role="button" aria-label="prev" for="slide-1" class="{{ site.namespace }}carousel-button">
+    <span class="{{ site.namespace }}icon-arrow-left"></span>
   </label>
-  <div class="carousel-inner">
-    <div class="carousel-item">
-      <input role="presentation" type="radio" id="slide-1" class="carousel-trigger" name="slide" hidden checked>
-      <div class="carousel-content">
+  <div class="{{ site.namespace }}carousel-inner">
+    <div class="{{ site.namespace }}carousel-item">
+      <input role="presentation" type="radio" id="slide-1" class="{{ site.namespace }}carousel-trigger" name="slide" hidden checked>
+      <div class="{{ site.namespace }}carousel-content">
         <p>Some slide 1 lorem ipsum</p>
       </div>
     </div>
 
-    <div class="carousel-item">
-      <input role="presentation" type="radio" id="slide-2" class="carousel-trigger" name="slide" hidden>
-      <div class="carousel-content">
+    <div class="{{ site.namespace }}carousel-item">
+      <input role="presentation" type="radio" id="slide-2" class="{{ site.namespace }}carousel-trigger" name="slide" hidden>
+      <div class="{{ site.namespace }}carousel-content">
         <p>The slide 2 lorem ipsum</p>
       </div>
     </div>
   </div>
-    <label role="button" aria-label="next" for="slide-2" class="carousel-button">
-      <span class="icon-arrow-right"></span>
-    </label>
+  <label role="button" aria-label="next" for="slide-2" class="{{ site.namespace }}carousel-button">
+    <span class="{{ site.namespace }}icon-arrow-right"></span>
+  </label>
 </div>
 
 {% highlight html %}
-<div class="carousel">
-  <label role="button" aria-label="prev" for="slide-1" class="carousel-button">
-    <span class="icon-arrow-left"></span>
+<div class="{{ site.namespace }}carousel">
+  <label role="button" aria-label="prev" for="slide-1" class="{{ site.namespace }}carousel-button">
+    <span class="{{ site.namespace }}icon-arrow-left"></span>
   </label>
-  <div class="carousel-inner">
-    <div class="carousel-item">
-      <input role="presentation" type="radio" id="slide-1" class="carousel-trigger" name="slide" hidden checked>
-      <div class="carousel-content">
+  <div class="{{ site.namespace }}carousel-inner">
+    <div class="{{ site.namespace }}carousel-item">
+      <input role="presentation" type="radio" id="slide-1" class="{{ site.namespace }}carousel-trigger" name="slide" hidden checked>
+      <div class="{{ site.namespace }}carousel-content">
         <p>Some slide 1 lorem ipsum</p>
       </div>
     </div>
 
-    <div class="carousel-item">
-      <input role="presentation" type="radio" id="slide-2" class="carousel-trigger" name="slide" hidden>
-      <div class="carousel-content">
+    <div class="{{ site.namespace }}carousel-item">
+      <input role="presentation" type="radio" id="slide-2" class="{{ site.namespace }}carousel-trigger" name="slide" hidden>
+      <div class="{{ site.namespace }}carousel-content">
         <p>The slide 2 lorem ipsum</p>
       </div>
     </div>
   </div>
-  <label role="button" aria-label="next" for="slide-2" class="carousel-button">
-    <span class="icon-arrow-right"></span>
+  <label role="button" aria-label="next" for="slide-2" class="{{ site.namespace }}carousel-button">
+    <span class="{{ site.namespace }}icon-arrow-right"></span>
   </label>
 </div>
 {% endhighlight %}

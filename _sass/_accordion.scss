@@ -1,7 +1,7 @@
 /* Accordion
    ========================================================================== */
 
-.accordion,
+.#{$namespace}accordion,
 %accordion {
   list-style: none;
   margin: 0;
@@ -39,11 +39,11 @@
     opacity: 0;
   }
 
-  &-trigger:checked ~ .accordion-content {
+  &-trigger:checked ~ .#{$namespace}accordion-content {
     display: block;
   }
 
-  &-trigger:checked ~ .accordion-title .accordion-icon {
+  &-trigger:checked ~ .#{$namespace}accordion-title .accordion-icon {
     @extend %icon-minus;
   }
 }

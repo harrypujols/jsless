@@ -1,7 +1,7 @@
 /* Modal
    ========================================================================== */
 
-.modal,
+.#{$namespace}modal,
 %modal {
   &-overlay {
     position: fixed;

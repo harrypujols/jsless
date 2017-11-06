@@ -1,7 +1,7 @@
 /* Table
    ========================================================================== */
 
-.table,
+.#{$namespace}table,
 %table {
     table-layout: fixed;
     width: 100%;
@@ -11,7 +11,7 @@
     }
 }
 
-.responsive-table,
+.#{$namespace}responsive-table,
 %responsive-table {
   @media (max-width: $breakpoint) {
     tr, th, td {

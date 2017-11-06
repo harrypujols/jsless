@@ -1,7 +1,7 @@
 /* Dropdown
    ========================================================================== */
 
-.dropdown,
+.#{$namespace}dropdown,
 %dropdown {
   position: relative;
 
@@ -27,11 +27,11 @@
     margin-left: 10px;
   }
 
-  &-trigger:checked ~ .dropdown-content {
+  &-trigger:checked ~ .#{$namespace}dropdown-content {
     display: block;
   }
 
-  &-trigger:checked ~ .dropdown-title .dropdown-icon {
+  &-trigger:checked ~ .#{$namespace}dropdown-title .#{$namespace}dropdown-icon {
     @extend %icon-arrow-up;
   }
 }
