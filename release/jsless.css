@@ -1,45 +1,45 @@
 /* Icons
    ========================================================================== */
-.icon-minus,
-.accordion-trigger:checked ~ .accordion-title .accordion-icon, .icon-x,
-.icon-plus,
-.accordion-icon,
-.icon-arrow-left,
-.icon-arrow-right,
-.modal-close, .icon-arrow-up,
-.icon-arrow-down,
-.dropdown-icon,
-.has-dropdown .dropdown-icon,
-.dropdown-trigger:checked ~ .dropdown-title .dropdown-icon,
-.has-dropdown:hover > a .dropdown-icon {
+.jsless-icon-minus,
+.jsless-accordion-trigger:checked ~ .jsless-accordion-title .accordion-icon, .jsless-icon-x,
+.jsless-icon-plus,
+.jsless-accordion-icon,
+.jsless-icon-arrow-left,
+.jsless-icon-arrow-right,
+.jsless-modal-close, .jsless-icon-arrow-up,
+.jsless-icon-arrow-down,
+.jsless-dropdown-icon,
+.has-dropdown .jsless-dropdown-icon,
+.jsless-dropdown-trigger:checked ~ .jsless-dropdown-title .jsless-dropdown-icon,
+.has-dropdown:hover > a .jsless-dropdown-icon {
   position: relative;
   display: inline-block;
   width: 10px;
   height: 10px;
 }
-.icon-minus:before,
-.accordion-trigger:checked ~ .accordion-title .accordion-icon:before, .icon-x:before,
-.icon-plus:before,
-.accordion-icon:before,
-.icon-arrow-left:before,
-.icon-arrow-right:before,
-.modal-close:before, .icon-arrow-up:before,
-.icon-arrow-down:before,
-.dropdown-icon:before,
-.has-dropdown .dropdown-icon:before,
-.dropdown-trigger:checked ~ .dropdown-title .dropdown-icon:before,
-.has-dropdown:hover > a .dropdown-icon:before, .icon-minus:after,
-.accordion-trigger:checked ~ .accordion-title .accordion-icon:after, .icon-x:after,
-.icon-plus:after,
-.accordion-icon:after,
-.icon-arrow-left:after,
-.icon-arrow-right:after,
-.modal-close:after, .icon-arrow-up:after,
-.icon-arrow-down:after,
-.dropdown-icon:after,
-.has-dropdown .dropdown-icon:after,
-.dropdown-trigger:checked ~ .dropdown-title .dropdown-icon:after,
-.has-dropdown:hover > a .dropdown-icon:after {
+.jsless-icon-minus:before,
+.jsless-accordion-trigger:checked ~ .jsless-accordion-title .accordion-icon:before, .jsless-icon-x:before,
+.jsless-icon-plus:before,
+.jsless-accordion-icon:before,
+.jsless-icon-arrow-left:before,
+.jsless-icon-arrow-right:before,
+.jsless-modal-close:before, .jsless-icon-arrow-up:before,
+.jsless-icon-arrow-down:before,
+.jsless-dropdown-icon:before,
+.has-dropdown .jsless-dropdown-icon:before,
+.jsless-dropdown-trigger:checked ~ .jsless-dropdown-title .jsless-dropdown-icon:before,
+.has-dropdown:hover > a .jsless-dropdown-icon:before, .jsless-icon-minus:after,
+.jsless-accordion-trigger:checked ~ .jsless-accordion-title .accordion-icon:after, .jsless-icon-x:after,
+.jsless-icon-plus:after,
+.jsless-accordion-icon:after,
+.jsless-icon-arrow-left:after,
+.jsless-icon-arrow-right:after,
+.jsless-modal-close:after, .jsless-icon-arrow-up:after,
+.jsless-icon-arrow-down:after,
+.jsless-dropdown-icon:after,
+.has-dropdown .jsless-dropdown-icon:after,
+.jsless-dropdown-trigger:checked ~ .jsless-dropdown-title .jsless-dropdown-icon:after,
+.has-dropdown:hover > a .jsless-dropdown-icon:after {
   content: "";
   position: absolute;
   width: 100%;
@@ -47,71 +47,71 @@
   border-top: 1px solid black;
 }
 
-.icon-minus,
-.accordion-trigger:checked ~ .accordion-title .accordion-icon {
+.jsless-icon-minus,
+.jsless-accordion-trigger:checked ~ .jsless-accordion-title .accordion-icon {
   transform: rotate(0);
 }
-.icon-minus:before,
-.accordion-trigger:checked ~ .accordion-title .accordion-icon:before {
+.jsless-icon-minus:before,
+.jsless-accordion-trigger:checked ~ .jsless-accordion-title .accordion-icon:before {
   transform: rotate(0);
 }
-.icon-minus:after,
-.accordion-trigger:checked ~ .accordion-title .accordion-icon:after {
+.jsless-icon-minus:after,
+.jsless-accordion-trigger:checked ~ .jsless-accordion-title .accordion-icon:after {
   transform: rotate(0);
 }
 
-.icon-x:before,
-.icon-plus:before,
-.accordion-icon:before,
-.icon-arrow-left:before,
-.icon-arrow-right:before,
-.modal-close:before {
+.jsless-icon-x:before,
+.jsless-icon-plus:before,
+.jsless-accordion-icon:before,
+.jsless-icon-arrow-left:before,
+.jsless-icon-arrow-right:before,
+.jsless-modal-close:before {
   transform: rotate(45deg);
 }
-.icon-x:after,
-.icon-plus:after,
-.accordion-icon:after,
-.icon-arrow-left:after,
-.icon-arrow-right:after,
-.modal-close:after {
+.jsless-icon-x:after,
+.jsless-icon-plus:after,
+.jsless-accordion-icon:after,
+.jsless-icon-arrow-left:after,
+.jsless-icon-arrow-right:after,
+.jsless-modal-close:after {
   transform: rotate(-45deg);
 }
 
-.icon-plus,
-.accordion-icon {
+.jsless-icon-plus,
+.jsless-accordion-icon {
   transform: rotate(45deg);
 }
 
-.icon-arrow-left:before,
-.icon-arrow-right:before {
+.jsless-icon-arrow-left:before,
+.jsless-icon-arrow-right:before {
   display: none;
 }
-.icon-arrow-left:after,
-.icon-arrow-right:after {
+.jsless-icon-arrow-left:after,
+.jsless-icon-arrow-right:after {
   width: 5px;
   height: 5px;
   top: 2.5px;
   border-left: 1px solid black;
 }
 
-.icon-arrow-right {
+.jsless-icon-arrow-right {
   transform: rotate(180deg);
 }
 
-.icon-arrow-up:before,
-.icon-arrow-down:before,
-.dropdown-icon:before,
-.has-dropdown .dropdown-icon:before,
-.dropdown-trigger:checked ~ .dropdown-title .dropdown-icon:before,
-.has-dropdown:hover > a .dropdown-icon:before {
+.jsless-icon-arrow-up:before,
+.jsless-icon-arrow-down:before,
+.jsless-dropdown-icon:before,
+.has-dropdown .jsless-dropdown-icon:before,
+.jsless-dropdown-trigger:checked ~ .jsless-dropdown-title .jsless-dropdown-icon:before,
+.has-dropdown:hover > a .jsless-dropdown-icon:before {
   display: none;
 }
-.icon-arrow-up:after,
-.icon-arrow-down:after,
-.dropdown-icon:after,
-.has-dropdown .dropdown-icon:after,
-.dropdown-trigger:checked ~ .dropdown-title .dropdown-icon:after,
-.has-dropdown:hover > a .dropdown-icon:after {
+.jsless-icon-arrow-up:after,
+.jsless-icon-arrow-down:after,
+.jsless-dropdown-icon:after,
+.has-dropdown .jsless-dropdown-icon:after,
+.jsless-dropdown-trigger:checked ~ .jsless-dropdown-title .jsless-dropdown-icon:after,
+.has-dropdown:hover > a .jsless-dropdown-icon:after {
   top: 0;
   width: 5px;
   height: 5px;
@@ -119,9 +119,9 @@
   transform: rotate(45deg);
 }
 
-.icon-arrow-down:after,
-.dropdown-icon:after,
-.has-dropdown .dropdown-icon:after {
+.jsless-icon-arrow-down:after,
+.jsless-dropdown-icon:after,
+.has-dropdown .jsless-dropdown-icon:after {
   top: auto;
   bottom: 50%;
   transform: rotate(225deg);
@@ -129,7 +129,7 @@
 
 /* Button
    ========================================================================== */
-.button {
+.jsless-button {
   display: inline-block;
   text-decoration: none;
   color: inherit;
@@ -139,30 +139,30 @@
 
 /* Accordion
    ========================================================================== */
-.accordion {
+.jsless-accordion {
   list-style: none;
   margin: 0;
   padding: 0;
   border-top: 1px solid black;
 }
-.accordion-item {
+.jsless-accordion-item {
   border-bottom: 1px solid black;
   padding: 10px 0;
   position: relative;
 }
-.accordion-content {
+.jsless-accordion-content {
   display: none;
   padding-left: 30px;
 }
-.accordion-icon {
+.jsless-accordion-icon {
   margin-right: 20px;
 }
-.accordion-title {
+.jsless-accordion-title {
   margin-top: 0;
   margin-bottom: 0;
   font-weight: bold;
 }
-.accordion-trigger {
+.jsless-accordion-trigger {
   position: absolute;
   width: 100%;
   height: 100%;
@@ -170,16 +170,16 @@
   z-index: 1;
   opacity: 0;
 }
-.accordion-trigger:checked ~ .accordion-content {
+.jsless-accordion-trigger:checked ~ .jsless-accordion-content {
   display: block;
 }
 
 /* Dropdown
    ========================================================================== */
-.dropdown {
+.jsless-dropdown {
   position: relative;
 }
-.dropdown-trigger {
+.jsless-dropdown-trigger {
   position: absolute;
   width: 100%;
   height: 20px;
@@ -187,45 +187,45 @@
   z-index: 1;
   opacity: 0;
 }
-.dropdown-content {
+.jsless-dropdown-content {
   display: none;
 }
-.dropdown-title {
+.jsless-dropdown-title {
   font-weight: bold;
 }
-.dropdown-icon {
+.jsless-dropdown-icon {
   margin-left: 10px;
 }
-.dropdown-trigger:checked ~ .dropdown-content {
+.jsless-dropdown-trigger:checked ~ .jsless-dropdown-content {
   display: block;
 }
 
 /* Menu
    ========================================================================== */
-.nav {
+.jsless-nav {
   margin-top: 15px;
 }
-.nav > ul {
+.jsless-nav > ul {
   border-bottom: 1px solid black;
 }
 @media (min-width: 641px) {
-  .nav > ul {
+  .jsless-nav > ul {
     display: flex;
     justify-content: space-between;
   }
 }
-.nav > ul > li:first-child a {
+.jsless-nav > ul > li:first-child a {
   padding-left: 0;
 }
-.nav > ul > li:last-child a {
+.jsless-nav > ul > li:last-child a {
   padding-right: 0;
 }
-.nav ul {
+.jsless-nav ul {
   list-style: none;
   margin: 0;
   padding: 0;
 }
-.nav a {
+.jsless-nav a {
   display: block;
   text-decoration: none;
   line-height: 32px;
@@ -233,96 +233,96 @@
   padding: 15px 0;
 }
 @media (min-width: 641px) {
-  .nav a {
+  .jsless-nav a {
     padding: 15px;
   }
 }
-.nav ul li {
+.jsless-nav ul li {
   position: relative;
   margin: 0;
   padding: 0;
 }
-.nav ul ul {
+.jsless-nav ul ul {
   display: none;
   background: #fff;
   padding-left: 10px;
 }
 @media (min-width: 641px) {
-  .nav ul ul {
+  .jsless-nav ul ul {
     position: absolute;
     top: 100%;
     left: 0;
     padding: 0;
   }
 }
-.nav ul ul a {
+.jsless-nav ul ul a {
   line-height: 120%;
 }
-.nav ul ul ul {
+.jsless-nav ul ul ul {
   top: 0;
   left: 100%;
 }
-.nav ul li:hover > ul {
+.jsless-nav ul li:hover > ul {
   display: block;
 }
-.nav .active {
+.jsless-nav .active {
   font-weight: bold;
 }
 
-.has-dropdown .dropdown-icon {
+.has-dropdown .jsless-dropdown-icon {
   margin-left: 10px;
 }
 
 /* Carousel
    ========================================================================== */
-.carousel {
+.jsless-carousel {
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
-.carousel-inner {
+.jsless-carousel-inner {
   flex-grow: 1;
   text-align: center;
 }
-.carousel-content {
+.jsless-carousel-content {
   display: none;
   width: 100%;
 }
-.carousel-button {
+.jsless-carousel-button {
   cursor: pointer;
 }
-.carousel-trigger:checked ~ .carousel-content {
+.jsless-carousel-trigger:checked ~ .jsless-carousel-content {
   display: block;
 }
-.carousel .icon-arrow-left,
-.carousel .icon-arrow-right {
+.jsless-carousel .jsless-icon-arrow-left,
+.jsless-carousel .jsless-icon-arrow-right {
   width: 20px;
   height: 20px;
 }
-.carousel .icon-arrow-left:after,
-.carousel .icon-arrow-right:after {
+.jsless-carousel .jsless-icon-arrow-left:after,
+.jsless-carousel .jsless-icon-arrow-right:after {
   width: 10px;
   height: 10px;
 }
 
 /* Table
    ========================================================================== */
-.table {
+.jsless-table {
   table-layout: fixed;
   width: 100%;
 }
-.table th {
+.jsless-table th {
   text-align: left;
 }
 
 @media (max-width: 640px) {
-  .responsive-table tr, .responsive-table th, .responsive-table td {
+  .jsless-responsive-table tr, .jsless-responsive-table th, .jsless-responsive-table td {
     display: block;
   }
-  .responsive-table thead {
+  .jsless-responsive-table thead {
     display: none;
   }
-  .responsive-table [data-title]:before {
+  .jsless-responsive-table [data-title]:before {
     content: attr(data-title);
     display: inline-block;
     width: 45%;
@@ -334,61 +334,61 @@
 
 /* Tabs
    ========================================================================== */
-.tabs {
+.jsless-tabs {
   display: flex;
   flex-wrap: wrap;
   position: relative;
 }
-.tabs-item {
+.jsless-tabs-item {
   min-height: 180px;
 }
-.tabs-content {
+.jsless-tabs-content {
   display: none;
   position: absolute;
   left: 0;
   height: 100px;
   overflow-y: auto;
 }
-.tabs-label {
+.jsless-tabs-label {
   display: block;
   border-bottom: 1px solid black;
   margin-bottom: 10px;
 }
-.tabs-content, .tabs-label {
+.jsless-tabs-content, .jsless-tabs-label {
   padding: 10px 20px;
 }
-.tabs-trigger {
+.jsless-tabs-trigger {
   position: absolute;
   height: 39px;
   opacity: 0;
 }
-.tabs-trigger:checked ~ .tabs-content {
+.jsless-tabs-trigger:checked ~ .jsless-tabs-content {
   display: block;
 }
-.tabs-trigger:checked ~ .tabs-label {
+.jsless-tabs-trigger:checked ~ .jsless-tabs-label {
   font-weight: bold;
   border: 1px solid black;
   border-bottom: 0;
 }
 
-.tabs-two .tabs-item,
-.tabs-two .tabs-trigger {
+.jsless-tabs-two .jsless-tabs-item,
+.jsless-tabs-two .jsless-tabs-trigger {
   width: 50%;
 }
 
-.tabs-three .tabs-item,
-.tabs-three .tabs-trigger {
+.jsless-tabs-three .jsless-tabs-item,
+.jsless-tabs-three .jsless-tabs-trigger {
   width: 33.3333333333%;
 }
 
-.tabs-four .tabs-item,
-.tabs-four .tabs-trigger {
+.jsless-tabs-four .jsless-tabs-item,
+.jsless-tabs-four .jsless-tabs-trigger {
   width: 25%;
 }
 
 /* Modal
    ========================================================================== */
-.modal-overlay {
+.jsless-modal-overlay {
   position: fixed;
   top: 0;
   left: 0;
@@ -398,7 +398,7 @@
   z-index: 100;
   display: none;
 }
-.modal-content {
+.jsless-modal-content {
   width: 640px;
   max-width: calc(100% - 40px);
   min-height: 25vh;
@@ -407,22 +407,22 @@
   background-color: white;
   box-sizing: border-box;
 }
-.modal-header {
+.jsless-modal-header {
   text-align: right;
   padding: 10px;
 }
-.modal-close {
+.jsless-modal-close {
   width: 20px;
   height: 20px;
   cursor: pointer;
 }
-.modal-close:before, .modal-close:after {
+.jsless-modal-close:before, .jsless-modal-close:after {
   left: 0;
 }
-.modal-body {
+.jsless-modal-body {
   padding: 0 20px 20px;
 }
-.modal :target {
+.jsless-modal :target {
   display: flex;
   align-items: center;
   justify-content: center;

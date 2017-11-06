@@ -39,28 +39,28 @@
         
             <div class="container content">
                 <h1>jsless pattern library</h1>
-<a class="button" href="https://github.com/harrypujols/jsless/archive/0.2.zip">
+<a class="jsless-button" href="https://github.com/harrypujols/jsless/archive/0.2.zip">
   Download
 </a>
 
 <section class="section">
-  <h2>Dropdown</h2>
-  <div class="dropdown">
-  <input role="presentation" type="checkbox" class="dropdown-trigger">
-  <label class="dropdown-title">
-    Basic Dropdown<span class="dropdown-icon"></span>
+  <h2>Dropdown *</h2>
+  <div class="jsless-dropdown">
+  <input role="presentation" type="checkbox" class="jsless-dropdown-trigger">
+  <label class="jsless-dropdown-title">
+    Basic Dropdown<span class="jsless-dropdown-icon"></span>
   </label>
-  <div class="dropdown-content">
+  <div class="jsless-dropdown-content">
     <p>Basic lorem ipsum dolor sit amet stuff.</p>
   </div>
 </div>
 
-<figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"dropdown"</span><span class="nt">&gt;</span>
-  <span class="nt">&lt;input</span> <span class="na">role=</span><span class="s">"presentation"</span> <span class="na">type=</span><span class="s">"checkbox"</span> <span class="na">class=</span><span class="s">"dropdown-trigger"</span><span class="nt">&gt;</span>
-  <span class="nt">&lt;label</span> <span class="na">class=</span><span class="s">"dropdown-title"</span><span class="nt">&gt;</span>
-    Basic Dropdown<span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"dropdown-icon"</span><span class="nt">&gt;&lt;/span&gt;</span>
+<figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"jsless-dropdown"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;input</span> <span class="na">role=</span><span class="s">"presentation"</span> <span class="na">type=</span><span class="s">"checkbox"</span> <span class="na">class=</span><span class="s">"jsless-dropdown-trigger"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;label</span> <span class="na">class=</span><span class="s">"jsless-dropdown-title"</span><span class="nt">&gt;</span>
+    Basic Dropdown<span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"jsless-dropdown-icon"</span><span class="nt">&gt;&lt;/span&gt;</span>
   <span class="nt">&lt;/label&gt;</span>
-  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"dropdown-content"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"jsless-dropdown-content"</span><span class="nt">&gt;</span>
     <span class="nt">&lt;p&gt;</span>Basic lorem ipsum dolor sit amet stuff.<span class="nt">&lt;/p&gt;</span>
   <span class="nt">&lt;/div&gt;</span>
 <span class="nt">&lt;/div&gt;</span></code></pre></figure>
@@ -69,78 +69,83 @@
 
 <section class="section">
   <h2>Modal</h2>
-  <div class="modal">
-  <div class="modal-overlay" id="modal">
-    <div class="modal-content">
-      <div class="modal-header">
-        <a role="button" aria-label="close" href="#" class="modal-close"></a>
+  <div class="jsless-modal">
+  <div class="jsless-modal-overlay" id="modal">
+    <div class="jsless-modal-content">
+      <div class="jsless-modal-header">
+        <a role="button" aria-label="close" href="#" class="jsless-modal-close"></a>
       </div>
-      <div class="modal-body">
+      <div class="jsless-modal-body">
         <p>This is a modal. Woo.</p>
-        <a role="button" href="#" class="modal-trigger button">Close</a>
+        <a role="button" contenteditable=""href="#" class="jsless-modal-trigger jsless-button">Close</a>
       </div>
     </div>
   </div>
 </div>
+<a role="dialog" aria-describedby="modal" href="#modal" class="jsless-modal-trigger jsless-button">Activate Modal</a>
 
-<a role="dialog" aria-describedby="modal" href="#modal" class="modal-trigger button">Activate Modal</a>
 
-
-<figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"modal"</span><span class="nt">&gt;</span>
-  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"modal-overlay"</span> <span class="na">id=</span><span class="s">"modal"</span><span class="nt">&gt;</span>
-    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"modal-content"</span><span class="nt">&gt;</span>
-      <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"modal-header"</span><span class="nt">&gt;</span>
-        <span class="nt">&lt;a</span> <span class="na">role=</span><span class="s">"button"</span> <span class="na">aria-label=</span><span class="s">"close"</span> <span class="na">href=</span><span class="s">"#"</span> <span class="na">class=</span><span class="s">"modal-close"</span><span class="nt">&gt;&lt;/a&gt;</span>
+<figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"jsless-modal"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"jsless-modal-overlay"</span> <span class="na">id=</span><span class="s">"modal"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"jsless-modal-content"</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"jsless-modal-header"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;a</span> <span class="na">role=</span><span class="s">"button"</span> <span class="na">aria-label=</span><span class="s">"close"</span> <span class="na">href=</span><span class="s">"#"</span> <span class="na">class=</span><span class="s">"jsless-modal-close"</span><span class="nt">&gt;&lt;/a&gt;</span>
       <span class="nt">&lt;/div&gt;</span>
-      <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"modal-body"</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"jsless-modal-body"</span><span class="nt">&gt;</span>
         <span class="nt">&lt;p&gt;</span>This is a modal. Woo.<span class="nt">&lt;/p&gt;</span>
-        <span class="nt">&lt;a</span> <span class="na">role=</span><span class="s">"button"</span> <span class="na">contenteditable=</span><span class="s">""</span><span class="na">href=</span><span class="s">"#"</span> <span class="na">class=</span><span class="s">"modal-trigger button"</span><span class="nt">&gt;</span>Close<span class="nt">&lt;/a&gt;</span>
+        <span class="nt">&lt;a</span> <span class="na">role=</span><span class="s">"button"</span> <span class="na">contenteditable=</span><span class="s">""</span><span class="na">href=</span><span class="s">"#"</span> <span class="na">class=</span><span class="s">"jsless-modal-trigger jsless-button"</span><span class="nt">&gt;</span>Close<span class="nt">&lt;/a&gt;</span>
       <span class="nt">&lt;/div&gt;</span>
     <span class="nt">&lt;/div&gt;</span>
   <span class="nt">&lt;/div&gt;</span>
 <span class="nt">&lt;/div&gt;</span>
-<span class="nt">&lt;a</span> <span class="na">role=</span><span class="s">"dialog"</span> <span class="na">aria-describedby=</span><span class="s">"modal"</span> <span class="na">href=</span><span class="s">"#modal"</span> <span class="na">class=</span><span class="s">"modal-trigger button"</span><span class="nt">&gt;</span>Activate Modal<span class="nt">&lt;/a&gt;</span></code></pre></figure>
+<span class="nt">&lt;a</span> <span class="na">role=</span><span class="s">"dialog"</span> <span class="na">aria-describedby=</span><span class="s">"modal"</span> <span class="na">href=</span><span class="s">"#modal"</span> <span class="na">class=</span><span class="s">"jsless-modal-trigger jsless-button"</span><span class="nt">&gt;</span>Activate Modal<span class="nt">&lt;/a&gt;</span></code></pre></figure>
 
 </section>
 
 <section class="section">
-  <h2>Accordion</h2>
-  <ul class="accordion">
-  <li class="accordion-item">
-    <input role="presentation" type="checkbox" class="accordion-trigger">
-    <label role="button" class="accordion-title"><span class="accordion-icon"></span>Accordion title</label>
-    <div class="accordion-content">
+  <h2>Accordion *</h2>
+  <ul class="jsless-accordion">
+  <li class="jsless-accordion-item">
+    <input role="presentation" type="checkbox" class="jsless-accordion-trigger">
+    <label role="button" class="jsless-accordion-title">
+      <span class="jsless-accordion-icon"></span>
+      Accordion title
+    </label>
+    <div class="jsless-accordion-content">
       <p>Some lorem ipsum dolor sit amet here.</p>
     </div>
   </li>
-  <li class="accordion-item">
-    <input role="presentation" type="checkbox" class="accordion-trigger">
-    <label role="button" class="accordion-title"><span class="accordion-icon"></span>Accordion title</label>
-    <div class="accordion-content">
+  <li class="jsless-accordion-item">
+    <input role="presentation" type="checkbox" class="jsless-accordion-trigger">
+    <label role="button" class="jsless-accordion-title">
+      <span class="jsless-accordion-icon"></span>
+      Accordion title
+    </label>
+    <div class="jsless-accordion-content">
       <p>Some lorem ipsum dolor sit amet here.</p>
     </div>
   </li>
 </ul>
 
 
-<figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;ul</span> <span class="na">class=</span><span class="s">"accordion"</span><span class="nt">&gt;</span>
-  <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"accordion-item"</span><span class="nt">&gt;</span>
-    <span class="nt">&lt;input</span> <span class="na">role=</span><span class="s">"presentation"</span> <span class="na">type=</span><span class="s">"checkbox"</span> <span class="na">class=</span><span class="s">"accordion-trigger"</span><span class="nt">&gt;</span>
-    <span class="nt">&lt;label</span> <span class="na">role=</span><span class="s">"button"</span> <span class="na">class=</span><span class="s">"accordion-title"</span><span class="nt">&gt;</span>
-      <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"accordion-icon"</span><span class="nt">&gt;&lt;/span&gt;</span>
+<figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;ul</span> <span class="na">class=</span><span class="s">"jsless-accordion"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"jsless-accordion-item"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;input</span> <span class="na">role=</span><span class="s">"presentation"</span> <span class="na">type=</span><span class="s">"checkbox"</span> <span class="na">class=</span><span class="s">"jsless-accordion-trigger"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;label</span> <span class="na">role=</span><span class="s">"button"</span> <span class="na">class=</span><span class="s">"jsless-accordion-title"</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"jsless-accordion-icon"</span><span class="nt">&gt;&lt;/span&gt;</span>
       Accordion title
     <span class="nt">&lt;/label&gt;</span>
-    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"accordion-content"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"jsless-accordion-content"</span><span class="nt">&gt;</span>
       <span class="nt">&lt;p&gt;</span>Some lorem ipsum dolor sit amet here.<span class="nt">&lt;/p&gt;</span>
     <span class="nt">&lt;/div&gt;</span>
   <span class="nt">&lt;/li&gt;</span>
-  <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"accordion-item"</span><span class="nt">&gt;</span>
-    <span class="nt">&lt;input</span> <span class="na">role=</span><span class="s">"presentation"</span> <span class="na">type=</span><span class="s">"checkbox"</span> <span class="na">class=</span><span class="s">"accordion-trigger"</span><span class="nt">&gt;</span>
-    <span class="nt">&lt;label</span> <span class="na">role=</span><span class="s">"button"</span> <span class="na">class=</span><span class="s">"accordion-title"</span><span class="nt">&gt;</span>
-      <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"accordion-icon"</span><span class="nt">&gt;&lt;/span&gt;</span>
+  <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"jsless-accordion-item"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;input</span> <span class="na">role=</span><span class="s">"presentation"</span> <span class="na">type=</span><span class="s">"checkbox"</span> <span class="na">class=</span><span class="s">"jsless-accordion-trigger"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;label</span> <span class="na">role=</span><span class="s">"button"</span> <span class="na">class=</span><span class="s">"jsless-accordion-title"</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"jsless-accordion-icon"</span><span class="nt">&gt;&lt;/span&gt;</span>
       Accordion title
     <span class="nt">&lt;/label&gt;</span>
-    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"accordion-content"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"jsless-accordion-content"</span><span class="nt">&gt;</span>
       <span class="nt">&lt;p&gt;</span>Some lorem ipsum dolor sit amet here.<span class="nt">&lt;/p&gt;</span>
     <span class="nt">&lt;/div&gt;</span>
   <span class="nt">&lt;/li&gt;</span>
@@ -150,47 +155,59 @@
 
 <section class="section">
   <h2>Dropdown Menu</h2>
-  <nav role="navigation" class="nav">
-<ul>
-  <li class="active"><a href="#">Home</a></li>
-  <li class="has-dropdown"><a href="#">Menu 1 <span class="dropdown-icon"></span></a>
-    <ul>
-      <li><a href="#">Sub Menu 1</a></li>
-      <li><a href="#">Sub Menu 2</a></li>
-      <li><a href="#">Sub Menu 3</a></li>
-      <li class="has-dropdown"><a href="#">Sub Menu 4 <span class="dropdown-icon"></span></a>
-        <ul>
-          <li class="has-dropdown"><a href="#">Deep Menu 1 <span class="dropdown-icon"></span></a>
-            <ul>
-              <li><a href="#">Sub Deep 1</a></li>
-              <li><a href="#">Sub Deep 2</a></li>
-              <li><a href="#">Sub Deep 3</a></li>
-              <li><a href="#">Sub Deep 4</a></li>
-            </ul>
-          </li>
-          <li><a href="#">Deep Menu 2</a></li>
-        </ul>
-      </li>
-      <li><a href="#">Sub Menu 5</a></li>
-    </ul>
-  </li>
-  <li class="has-dropdown"><a href="#">Menu 2 <span class="dropdown-icon"></span></a>
-    <ul>
-      <li><a href="#">Sub Menu 1</a></li>
-      <li><a href="#">Sub Menu 2</a></li>
-      <li><a href="#">Sub Menu 3</a></li>
-    </ul>
-  </li>
-  <li><a href="#">Menu 3</a></li>
-</ul>
+  <nav role="navigation" class="jsless-nav">
+  <ul>
+    <li class="active"><a href="#">Home</a></li>
+    <li class="has-dropdown">
+      <a href="#">
+        Menu 1 <span class="jsless-dropdown-icon"></span>
+      </a>
+      <ul>
+        <li><a href="#">Sub Menu 1</a></li>
+        <li><a href="#">Sub Menu 2</a></li>
+        <li><a href="#">Sub Menu 3</a></li>
+        <li class="has-dropdown">
+          <a href="#">
+            Sub Menu 4 <span class="jsless-dropdown-icon"></span>
+          </a>
+          <ul>
+            <li class="has-dropdown">
+              <a href="#">
+                Deep Menu 1 <span class="jsless-dropdown-icon"></span>
+              </a>
+              <ul>
+                <li><a href="#">Sub Deep 1</a></li>
+                <li><a href="#">Sub Deep 2</a></li>
+                <li><a href="#">Sub Deep 3</a></li>
+                <li><a href="#">Sub Deep 4</a></li>
+              </ul>
+            </li>
+            <li><a href="#">Deep Menu 2</a></li>
+          </ul>
+        </li>
+        <li><a href="#">Sub Menu 5</a></li>
+      </ul>
+    </li>
+    <li class="has-dropdown">
+      <a href="#">
+        Menu 2 <span class="jsless-dropdown-icon"></span>
+      </a>
+      <ul>
+        <li><a href="#">Sub Menu 1</a></li>
+        <li><a href="#">Sub Menu 2</a></li>
+        <li><a href="#">Sub Menu 3</a></li>
+      </ul>
+    </li>
+    <li><a href="#">Menu 3</a></li>
+  </ul>
 </nav>
 
-<figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;nav</span> <span class="na">role=</span><span class="s">"navigation"</span> <span class="na">class=</span><span class="s">"nav"</span><span class="nt">&gt;</span>
+<figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;nav</span> <span class="na">role=</span><span class="s">"navigation"</span> <span class="na">class=</span><span class="s">"jsless-nav"</span><span class="nt">&gt;</span>
   <span class="nt">&lt;ul&gt;</span>
     <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"active"</span><span class="nt">&gt;&lt;a</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>Home<span class="nt">&lt;/a&gt;&lt;/li&gt;</span>
     <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"has-dropdown"</span><span class="nt">&gt;</span>
       <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>
-        Menu 1 <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"dropdown-icon"</span><span class="nt">&gt;&lt;/span&gt;</span>
+        Menu 1 <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"jsless-dropdown-icon"</span><span class="nt">&gt;&lt;/span&gt;</span>
       <span class="nt">&lt;/a&gt;</span>
       <span class="nt">&lt;ul&gt;</span>
         <span class="nt">&lt;li&gt;&lt;a</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>Sub Menu 1<span class="nt">&lt;/a&gt;&lt;/li&gt;</span>
@@ -198,12 +215,12 @@
         <span class="nt">&lt;li&gt;&lt;a</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>Sub Menu 3<span class="nt">&lt;/a&gt;&lt;/li&gt;</span>
         <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"has-dropdown"</span><span class="nt">&gt;</span>
           <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>
-            Sub Menu 4 <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"dropdown-icon"</span><span class="nt">&gt;&lt;/span&gt;</span>
+            Sub Menu 4 <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"jsless-dropdown-icon"</span><span class="nt">&gt;&lt;/span&gt;</span>
           <span class="nt">&lt;/a&gt;</span>
           <span class="nt">&lt;ul&gt;</span>
             <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"has-dropdown"</span><span class="nt">&gt;</span>
               <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>
-                Deep Menu 1 <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"dropdown-icon"</span><span class="nt">&gt;&lt;/span&gt;</span>
+                Deep Menu 1 <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"jsless-dropdown-icon"</span><span class="nt">&gt;&lt;/span&gt;</span>
               <span class="nt">&lt;/a&gt;</span>
               <span class="nt">&lt;ul&gt;</span>
                 <span class="nt">&lt;li&gt;&lt;a</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>Sub Deep 1<span class="nt">&lt;/a&gt;&lt;/li&gt;</span>
@@ -220,7 +237,7 @@
     <span class="nt">&lt;/li&gt;</span>
     <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"has-dropdown"</span><span class="nt">&gt;</span>
       <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>
-        Menu 2 <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"dropdown-icon"</span><span class="nt">&gt;&lt;/span&gt;</span>
+        Menu 2 <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"jsless-dropdown-icon"</span><span class="nt">&gt;&lt;/span&gt;</span>
       <span class="nt">&lt;/a&gt;</span>
       <span class="nt">&lt;ul&gt;</span>
         <span class="nt">&lt;li&gt;&lt;a</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>Sub Menu 1<span class="nt">&lt;/a&gt;&lt;/li&gt;</span>
@@ -236,7 +253,7 @@
 
 <section class="section">
   <h2>Responsive Table</h2>
-  <table class="table responsive-table">
+  <table class="jsless-table jsless-responsive-table">
   <thead>
     <tr>
       <th>Item 1</th>
@@ -255,7 +272,7 @@
   </tbody>
 </table>
 
-<figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;table</span> <span class="na">class=</span><span class="s">"table responsive-table"</span><span class="nt">&gt;</span>
+<figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;table</span> <span class="na">class=</span><span class="s">"jsless-table jsless-responsive-table"</span><span class="nt">&gt;</span>
   <span class="nt">&lt;thead&gt;</span>
     <span class="nt">&lt;tr&gt;</span>
       <span class="nt">&lt;th&gt;</span>Item 1<span class="nt">&lt;/th&gt;</span>
@@ -277,128 +294,131 @@
 </section>
 
 <section class="section">
-  <h2>Carousel</h2>
-  <div class="carousel">
-  <label role="button" aria-label="prev" for="slide-1" class="carousel-button">
-    <span class="icon-arrow-left"></span>
+  <h2>Carousel *</h2>
+  <div class="jsless-carousel">
+  <label role="button" aria-label="prev" for="slide-1" class="jsless-carousel-button">
+    <span class="jsless-icon-arrow-left"></span>
   </label>
-  <div class="carousel-inner">
-    <div class="carousel-item">
-      <input role="presentation" type="radio" id="slide-1" class="carousel-trigger" name="slide" hidden checked>
-      <div class="carousel-content">
+  <div class="jsless-carousel-inner">
+    <div class="jsless-carousel-item">
+      <input role="presentation" type="radio" id="slide-1" class="jsless-carousel-trigger" name="slide" hidden checked>
+      <div class="jsless-carousel-content">
         <p>Some slide 1 lorem ipsum</p>
       </div>
     </div>
 
-    <div class="carousel-item">
-      <input role="presentation" type="radio" id="slide-2" class="carousel-trigger" name="slide" hidden>
-      <div class="carousel-content">
+    <div class="jsless-carousel-item">
+      <input role="presentation" type="radio" id="slide-2" class="jsless-carousel-trigger" name="slide" hidden>
+      <div class="jsless-carousel-content">
         <p>The slide 2 lorem ipsum</p>
       </div>
     </div>
   </div>
-    <label role="button" aria-label="next" for="slide-2" class="carousel-button">
-      <span class="icon-arrow-right"></span>
-    </label>
+  <label role="button" aria-label="next" for="slide-2" class="jsless-carousel-button">
+    <span class="jsless-icon-arrow-right"></span>
+  </label>
 </div>
 
-<figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"carousel"</span><span class="nt">&gt;</span>
-  <span class="nt">&lt;label</span> <span class="na">role=</span><span class="s">"button"</span> <span class="na">aria-label=</span><span class="s">"prev"</span> <span class="na">for=</span><span class="s">"slide-1"</span> <span class="na">class=</span><span class="s">"carousel-button"</span><span class="nt">&gt;</span>
-    <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"icon-arrow-left"</span><span class="nt">&gt;&lt;/span&gt;</span>
+<figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"jsless-carousel"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;label</span> <span class="na">role=</span><span class="s">"button"</span> <span class="na">aria-label=</span><span class="s">"prev"</span> <span class="na">for=</span><span class="s">"slide-1"</span> <span class="na">class=</span><span class="s">"jsless-carousel-button"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"jsless-icon-arrow-left"</span><span class="nt">&gt;&lt;/span&gt;</span>
   <span class="nt">&lt;/label&gt;</span>
-  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"carousel-inner"</span><span class="nt">&gt;</span>
-    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"carousel-item"</span><span class="nt">&gt;</span>
-      <span class="nt">&lt;input</span> <span class="na">role=</span><span class="s">"presentation"</span> <span class="na">type=</span><span class="s">"radio"</span> <span class="na">id=</span><span class="s">"slide-1"</span> <span class="na">class=</span><span class="s">"carousel-trigger"</span> <span class="na">name=</span><span class="s">"slide"</span> <span class="na">hidden</span> <span class="na">checked</span><span class="nt">&gt;</span>
-      <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"carousel-content"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"jsless-carousel-inner"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"jsless-carousel-item"</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;input</span> <span class="na">role=</span><span class="s">"presentation"</span> <span class="na">type=</span><span class="s">"radio"</span> <span class="na">id=</span><span class="s">"slide-1"</span> <span class="na">class=</span><span class="s">"jsless-carousel-trigger"</span> <span class="na">name=</span><span class="s">"slide"</span> <span class="na">hidden</span> <span class="na">checked</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"jsless-carousel-content"</span><span class="nt">&gt;</span>
         <span class="nt">&lt;p&gt;</span>Some slide 1 lorem ipsum<span class="nt">&lt;/p&gt;</span>
       <span class="nt">&lt;/div&gt;</span>
     <span class="nt">&lt;/div&gt;</span>
 
-    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"carousel-item"</span><span class="nt">&gt;</span>
-      <span class="nt">&lt;input</span> <span class="na">role=</span><span class="s">"presentation"</span> <span class="na">type=</span><span class="s">"radio"</span> <span class="na">id=</span><span class="s">"slide-2"</span> <span class="na">class=</span><span class="s">"carousel-trigger"</span> <span class="na">name=</span><span class="s">"slide"</span> <span class="na">hidden</span><span class="nt">&gt;</span>
-      <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"carousel-content"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"jsless-carousel-item"</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;input</span> <span class="na">role=</span><span class="s">"presentation"</span> <span class="na">type=</span><span class="s">"radio"</span> <span class="na">id=</span><span class="s">"slide-2"</span> <span class="na">class=</span><span class="s">"jsless-carousel-trigger"</span> <span class="na">name=</span><span class="s">"slide"</span> <span class="na">hidden</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"jsless-carousel-content"</span><span class="nt">&gt;</span>
         <span class="nt">&lt;p&gt;</span>The slide 2 lorem ipsum<span class="nt">&lt;/p&gt;</span>
       <span class="nt">&lt;/div&gt;</span>
     <span class="nt">&lt;/div&gt;</span>
   <span class="nt">&lt;/div&gt;</span>
-  <span class="nt">&lt;label</span> <span class="na">role=</span><span class="s">"button"</span> <span class="na">aria-label=</span><span class="s">"next"</span> <span class="na">for=</span><span class="s">"slide-2"</span> <span class="na">class=</span><span class="s">"carousel-button"</span><span class="nt">&gt;</span>
-    <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"icon-arrow-right"</span><span class="nt">&gt;&lt;/span&gt;</span>
+  <span class="nt">&lt;label</span> <span class="na">role=</span><span class="s">"button"</span> <span class="na">aria-label=</span><span class="s">"next"</span> <span class="na">for=</span><span class="s">"slide-2"</span> <span class="na">class=</span><span class="s">"jsless-carousel-button"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"jsless-icon-arrow-right"</span><span class="nt">&gt;&lt;/span&gt;</span>
   <span class="nt">&lt;/label&gt;</span>
 <span class="nt">&lt;/div&gt;</span></code></pre></figure>
 
 </section>
 
 <section class="section">
-  <h2>Tabs</h2>
-  <div role="tablist" class="tabs tabs-four">
-  <div role="tab" aria-controls="tab1" class="tabs-item">
-    <input role="presentation" type="radio" id="tab1" name="tab" class="tabs-trigger" checked>
-    <label role="button" for="tab1" class="tabs-label">Tab 1</label>
-    <div role="tabpanel" class="tabs-content">
+  <h2>Tabs *</h2>
+  <div role="tablist" class="jsless-tabs jsless-tabs-four">
+  <div role="tab" aria-controls="tab1" class="jsless-tabs-item">
+    <input role="presentation" type="radio" id="tab1" name="tab" class="jsless-tabs-trigger" checked>
+    <label role="button"  for="tab1" class="jsless-tabs-label">Tab 1</label>
+    <div role="tabpanel" class="jsless-tabs-content">
       Lorem ipsum dolor sit amet stuff for tab 1 goes around here.
     </div>
   </div>
 
-  <div role="tab" aria-controls="tab2" class="tabs-item">
-      <input role="presentation" type="radio" id="tab2" name="tab" class="tabs-trigger">
-      <label role="button" for="tab2" class="tabs-label">Tab 2</label>
-      <div role="tabpanel" class="tabs-content">
+  <div role="tab" aria-controls="tab2" class="jsless-tabs-item">
+      <input role="presentation" type="radio" id="tab2" name="tab" class="jsless-tabs-trigger">
+      <label role="button"  for="tab2" class="jsless-tabs-label">Tab 2</label>
+      <div role="tabpanel" class="jsless-tabs-content">
         Another lorem ipsum dolor sit amet stuff over here for tab 2.
       </div>
   </div>
 
-  <div role="tab" aria-controls="tab3" class="tabs-item">
-      <input role="presentation" type="radio" id="tab3" name="tab" class="tabs-trigger">
-      <label role="button" for="tab3" class="tabs-label">Tab 3</label>
-      <div role="tabpanel" class="tabs-content">
+  <div role="tab" aria-controls="tab3" class="jsless-tabs-item">
+      <input role="presentation" type="radio" id="tab3" name="tab" class="jsless-tabs-trigger">
+      <label role="button" for="tab3" class="jsless-tabs-label">Tab 3</label>
+      <div role="tabpanel" class="jsless-tabs-content">
         For the third tab, we'll do another lorem ipsum dolor sit amet.
       </div>
   </div>
 
-  <div role="tab" aria-controls="tab4" class="tabs-item">
-      <input role="presentation" type="radio" id="tab4" name="tab" class="tabs-trigger">
-      <label role="button" for="tab4" class="tabs-label">Tab 4</label>
-      <div role="tabpanel" class="tabs-content">
+  <div role="tab" aria-controls="tab4" class="jsless-tabs-item">
+      <input role="presentation" type="radio" id="tab4" name="tab" class="jsless-tabs-trigger">
+      <label role="button" for="tab4" class="jsless-tabs-label">Tab 4</label>
+      <div role="tabpanel" class="jsless-tabs-content">
         And the last tab here will have more lorem ipsum dolor sit amet.
       </div>
   </div>
 </div>
 
-<figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;div</span> <span class="na">role=</span><span class="s">"tablist"</span> <span class="na">class=</span><span class="s">"tabs tabs-four"</span><span class="nt">&gt;</span>
-  <span class="nt">&lt;div</span> <span class="na">role=</span><span class="s">"tab"</span> <span class="na">aria-controls=</span><span class="s">"tab1"</span> <span class="na">class=</span><span class="s">"tabs-item"</span><span class="nt">&gt;</span>
-    <span class="nt">&lt;input</span> <span class="na">role=</span><span class="s">"presentation"</span> <span class="na">type=</span><span class="s">"radio"</span> <span class="na">id=</span><span class="s">"tab1"</span> <span class="na">name=</span><span class="s">"tab"</span> <span class="na">class=</span><span class="s">"tabs-trigger"</span> <span class="na">checked</span><span class="nt">&gt;</span>
-    <span class="nt">&lt;label</span> <span class="na">role=</span><span class="s">"button"</span>  <span class="na">for=</span><span class="s">"tab1"</span> <span class="na">class=</span><span class="s">"tabs-label"</span><span class="nt">&gt;</span>Tab 1<span class="nt">&lt;/label&gt;</span>
-    <span class="nt">&lt;div</span> <span class="na">role=</span><span class="s">"tabpanel"</span> <span class="na">class=</span><span class="s">"tabs-content"</span><span class="nt">&gt;</span>
+<figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;div</span> <span class="na">role=</span><span class="s">"tablist"</span> <span class="na">class=</span><span class="s">"jsless-tabs jsless-tabs-four"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">role=</span><span class="s">"tab"</span> <span class="na">aria-controls=</span><span class="s">"tab1"</span> <span class="na">class=</span><span class="s">"jsless-tabs-item"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;input</span> <span class="na">role=</span><span class="s">"presentation"</span> <span class="na">type=</span><span class="s">"radio"</span> <span class="na">id=</span><span class="s">"tab1"</span> <span class="na">name=</span><span class="s">"tab"</span> <span class="na">class=</span><span class="s">"jsless-tabs-trigger"</span> <span class="na">checked</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;label</span> <span class="na">role=</span><span class="s">"button"</span>  <span class="na">for=</span><span class="s">"tab1"</span> <span class="na">class=</span><span class="s">"jsless-tabs-label"</span><span class="nt">&gt;</span>Tab 1<span class="nt">&lt;/label&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">role=</span><span class="s">"tabpanel"</span> <span class="na">class=</span><span class="s">"jsless-tabs-content"</span><span class="nt">&gt;</span>
       Lorem ipsum dolor sit amet stuff for tab 1 goes around here.
     <span class="nt">&lt;/div&gt;</span>
   <span class="nt">&lt;/div&gt;</span>
 
-  <span class="nt">&lt;div</span> <span class="na">role=</span><span class="s">"tab"</span> <span class="na">aria-controls=</span><span class="s">"tab2"</span> <span class="na">class=</span><span class="s">"tabs-item"</span><span class="nt">&gt;</span>
-      <span class="nt">&lt;input</span> <span class="na">role=</span><span class="s">"presentation"</span> <span class="na">type=</span><span class="s">"radio"</span> <span class="na">id=</span><span class="s">"tab2"</span> <span class="na">name=</span><span class="s">"tab"</span> <span class="na">class=</span><span class="s">"tabs-trigger"</span><span class="nt">&gt;</span>
-      <span class="nt">&lt;label</span> <span class="na">role=</span><span class="s">"button"</span>  <span class="na">for=</span><span class="s">"tab2"</span> <span class="na">class=</span><span class="s">"tabs-label"</span><span class="nt">&gt;</span>Tab 2<span class="nt">&lt;/label&gt;</span>
-      <span class="nt">&lt;div</span> <span class="na">role=</span><span class="s">"tabpanel"</span> <span class="na">class=</span><span class="s">"tabs-content"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">role=</span><span class="s">"tab"</span> <span class="na">aria-controls=</span><span class="s">"tab2"</span> <span class="na">class=</span><span class="s">"jsless-tabs-item"</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;input</span> <span class="na">role=</span><span class="s">"presentation"</span> <span class="na">type=</span><span class="s">"radio"</span> <span class="na">id=</span><span class="s">"tab2"</span> <span class="na">name=</span><span class="s">"tab"</span> <span class="na">class=</span><span class="s">"jsless-tabs-trigger"</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;label</span> <span class="na">role=</span><span class="s">"button"</span>  <span class="na">for=</span><span class="s">"tab2"</span> <span class="na">class=</span><span class="s">"jsless-tabs-label"</span><span class="nt">&gt;</span>Tab 2<span class="nt">&lt;/label&gt;</span>
+      <span class="nt">&lt;div</span> <span class="na">role=</span><span class="s">"tabpanel"</span> <span class="na">class=</span><span class="s">"jsless-tabs-content"</span><span class="nt">&gt;</span>
         Another lorem ipsum dolor sit amet stuff over here for tab 2.
       <span class="nt">&lt;/div&gt;</span>
   <span class="nt">&lt;/div&gt;</span>
 
-  <span class="nt">&lt;div</span> <span class="na">role=</span><span class="s">"tab"</span> <span class="na">aria-controls=</span><span class="s">"tab3"</span> <span class="na">class=</span><span class="s">"tabs-item"</span><span class="nt">&gt;</span>
-      <span class="nt">&lt;input</span> <span class="na">role=</span><span class="s">"presentation"</span> <span class="na">type=</span><span class="s">"radio"</span> <span class="na">id=</span><span class="s">"tab3"</span> <span class="na">name=</span><span class="s">"tab"</span> <span class="na">class=</span><span class="s">"tabs-trigger"</span><span class="nt">&gt;</span>
-      <span class="nt">&lt;label</span> <span class="na">role=</span><span class="s">"button"</span> <span class="na">for=</span><span class="s">"tab3"</span> <span class="na">class=</span><span class="s">"tabs-label"</span><span class="nt">&gt;</span>Tab 3<span class="nt">&lt;/label&gt;</span>
-      <span class="nt">&lt;div</span> <span class="na">role=</span><span class="s">"tabpanel"</span> <span class="na">class=</span><span class="s">"tabs-content"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">role=</span><span class="s">"tab"</span> <span class="na">aria-controls=</span><span class="s">"tab3"</span> <span class="na">class=</span><span class="s">"jsless-tabs-item"</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;input</span> <span class="na">role=</span><span class="s">"presentation"</span> <span class="na">type=</span><span class="s">"radio"</span> <span class="na">id=</span><span class="s">"tab3"</span> <span class="na">name=</span><span class="s">"tab"</span> <span class="na">class=</span><span class="s">"jsless-tabs-trigger"</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;label</span> <span class="na">role=</span><span class="s">"button"</span> <span class="na">for=</span><span class="s">"tab3"</span> <span class="na">class=</span><span class="s">"jsless-tabs-label"</span><span class="nt">&gt;</span>Tab 3<span class="nt">&lt;/label&gt;</span>
+      <span class="nt">&lt;div</span> <span class="na">role=</span><span class="s">"tabpanel"</span> <span class="na">class=</span><span class="s">"jsless-tabs-content"</span><span class="nt">&gt;</span>
         For the third tab, we'll do another lorem ipsum dolor sit amet.
       <span class="nt">&lt;/div&gt;</span>
   <span class="nt">&lt;/div&gt;</span>
 
-  <span class="nt">&lt;div</span> <span class="na">role=</span><span class="s">"tab"</span> <span class="na">aria-controls=</span><span class="s">"tab4"</span> <span class="na">class=</span><span class="s">"tabs-item"</span><span class="nt">&gt;</span>
-      <span class="nt">&lt;input</span> <span class="na">role=</span><span class="s">"presentation"</span> <span class="na">type=</span><span class="s">"radio"</span> <span class="na">id=</span><span class="s">"tab4"</span> <span class="na">name=</span><span class="s">"tab"</span> <span class="na">class=</span><span class="s">"tabs-trigger"</span><span class="nt">&gt;</span>
-      <span class="nt">&lt;label</span> <span class="na">role=</span><span class="s">"button"</span> <span class="na">for=</span><span class="s">"tab4"</span> <span class="na">class=</span><span class="s">"tabs-label"</span><span class="nt">&gt;</span>Tab 4<span class="nt">&lt;/label&gt;</span>
-      <span class="nt">&lt;div</span> <span class="na">role=</span><span class="s">"tabpanel"</span> <span class="na">class=</span><span class="s">"tabs-content"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">role=</span><span class="s">"tab"</span> <span class="na">aria-controls=</span><span class="s">"tab4"</span> <span class="na">class=</span><span class="s">"jsless-tabs-item"</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;input</span> <span class="na">role=</span><span class="s">"presentation"</span> <span class="na">type=</span><span class="s">"radio"</span> <span class="na">id=</span><span class="s">"tab4"</span> <span class="na">name=</span><span class="s">"tab"</span> <span class="na">class=</span><span class="s">"jsless-tabs-trigger"</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;label</span> <span class="na">role=</span><span class="s">"button"</span> <span class="na">for=</span><span class="s">"tab4"</span> <span class="na">class=</span><span class="s">"jsless-tabs-label"</span><span class="nt">&gt;</span>Tab 4<span class="nt">&lt;/label&gt;</span>
+      <span class="nt">&lt;div</span> <span class="na">role=</span><span class="s">"tabpanel"</span> <span class="na">class=</span><span class="s">"jsless-tabs-content"</span><span class="nt">&gt;</span>
         And the last tab here will have more lorem ipsum dolor sit amet.
       <span class="nt">&lt;/div&gt;</span>
   <span class="nt">&lt;/div&gt;</span>
 <span class="nt">&lt;/div&gt;</span></code></pre></figure>
 
 </section>
+<p>
+  <small><b>*</b>Not accessible (yet)</small>
+</p>
 
             </div>
         
