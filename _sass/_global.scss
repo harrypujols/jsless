@@ -1,0 +1,21 @@
+/* Site's globals
+   ========================================================================== */
+
+.wrapper {
+  font-family: sans-serif;
+}
+
+.container {
+  max-width: $container-width;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.divider {
+  border: 0;
+  border-top: 1px solid black;
+}
+
+.section {
+  margin: 100px 0;
+}
